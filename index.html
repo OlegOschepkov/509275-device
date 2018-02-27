@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Пусть пока будет -->
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header class="header">
+        <h1 class="header_logo logo">Device</h1>
+        <!-- заключить в div?-->
+        <div class="header_user_tools">
+            <form>
+                <input type="search" id="header_search_field" value="Поиск по сайту">
+            </form>
+            <div class="header_login">
+                <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div -->
+            </div>
+            <a href="#" class="btn_small compare">Сравнить</a>
+            <a href="#" class="btn_small shopping_cart">Корзина</a>
+        </div>
+        <nav class="header_navigation">
+            <ul class="header_menu_catalog">
+                <li><a href="#" class="btn_big">Каталог товаров</a>
+                    <ul>
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                        <li><a href="#">Фитнес-браслеты</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                        <li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="btn_big">Доставка</a>
+            <a href="#" class="btn_big">Гарантия</a>
+            <a href="#" class="btn_big">Контакты</a>
+        </nav>
+    </header>
 
-  </body>
+
+
+    <div class="to_be_able_to_collapse_this_text">
+        <!--
+              Слайдер 1
+              Делай селфи,
+              как Бен Стиллер!
+              -
+              Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              -
+              Подробнее
+              -
+              8,5 м Длина палки; 5 кг Вес палки; Карбон Материал
+              -
+              Слайдер 2
+              Худеем правильно!
+              -
+              Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не пропускать занятия и соблюдать диету.
+              -
+              Подробнее
+              -
+              48 часов Без подзарядки
+              -
+              Слайдер 3
+              Порхает как бабочка, жалит как пчела!
+              -
+              Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным лазером, замаскированным под стандартную камеру.
+              -
+              800 м Дальность полета; 50 м Радиус поражения
+              -->
+    </div>
+    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+
+
+    <footer>
+        <h1 class="footer_logo logo">Device</h1>
+        <div class="footer_user_tools">
+            <div class="footer_login">
+                <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div -->
+            </div>
+            <a href="#" class="btn_small compare">Сравнить</a>
+            <a href="#" class="btn_small shopping_cart">Корзина</a>
+        </div>
+        <div class="footer_adress">
+            <p>г.Москва, ул.Строителей, 15</p>
+        </div>
+        <nav class="footer_navigation">
+            <a href="#" class="btn_big">Доставка</a>
+            <a href="#" class="btn_big">Гарантия</a>
+            <a href="#" class="btn_big">Контакты</a>
+        </nav>
+        <div class="footer_phone">
+            <p>Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer_social">
+            <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
+            <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
+            <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
+        </div>
+        <div class="footer-copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        </div>
+
+    </footer>
+</body>
+
 </html>
