@@ -6,26 +6,26 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Пусть пока будет -->
+    <!-- ^ Пусть пока будет -->
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header_logo logo">Device</h1>
-        <!-- заключить в div?-->
-        <div class="header_user_tools">
+        <h1 class="header-logo logo">Device</h1>
+        <!-- ^ Кажется этот тег неверный -->
+        <div class="header-user-tools">
             <form>
-                <input type="search" id="header_search_field" value="Поиск по сайту">
+                <input type="search" id="header-search-field" value="Поиск по сайту">
             </form>
-            <div class="header_login">
-                <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div -->
+            <div class="header-login">
+                <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div, позже разберусь -->
             </div>
-            <a href="#" class="btn_small compare">Сравнить</a>
-            <a href="#" class="btn_small shopping_cart">Корзина</a>
+            <a href="#" class="btn-small compare">Сравнить</a>
+            <a href="#" class="btn-small shopping-cart">Корзина</a>
         </div>
-        <nav class="header_navigation">
-            <ul class="header_menu_catalog">
-                <li><a href="#" class="btn_big">Каталог товаров</a>
+        <nav class="header-navigation">
+            <ul class="header-menu-popular">
+                <li><a href="#" class="btn-big sub-menu">Каталог товаров</a>
                     <ul>
                         <li><a href="#">Виртуальная реальность</a></li>
                         <li><a href="#">Моноподы для селфи</a></li>
@@ -35,72 +35,173 @@
                         <li><a href="#">Квадрокоптеры</a></li>
                     </ul>
                 </li>
+                <li><a href="#" class="btn-big">Доставка</a></li>
+                <li><a href="#" class="btn-big">Гарантия</a></li>
+                <li><a href="#" class="btn-big">Контакты</a></li>
             </ul>
-            <a href="#" class="btn_big">Доставка</a>
-            <a href="#" class="btn_big">Гарантия</a>
-            <a href="#" class="btn_big">Контакты</a>
         </nav>
     </header>
 
+    <section class="top-slider">
+        <div class="hot-items-slider">
+            <input type="radio" id="hot-items-btn-1" name="toggle" checked>
+            <input type="radio" id="hot-items-btn-2" name="toggle">
+            <input type="radio" id="hot-items-btn-3" name="toggle">
+        </div>
+        <div class="hot-items-slider-controls">
+            <label for="hot-items-btn-1"></label>
+            <label for="hot-items-btn-2"></label>
+            <label for="hot-items-btn-3"></label>
+        </div>
+        <div class="hot-items-slides">
+            <div class="slider-1">
+                <img src="img/ben.jpg" alt="">
+                <h1>Делай селфи, как Бен Стиллер!</h1>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
+                <a href="" class="btn-animated-1">Подробнее</a>
+                <div class="advantage">
+                    <h2>8,5 м</h2>
+                    <p>Длина палки</p>
+                </div>
+                <div class="advantage">
+                    <h2>5 кг</h2>
+                    <p>Вес палки</p>
+                </div>
+                <div class="advantage">
+                    <h2>Карбон</h2>
+                    <p>Материал</p>
+                </div>
+            </div>
+            <div class="slider-2">
+                <img src="img/clocks.jpg" alt="">
+                <h1>Худеем правильно!</h1>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="" class="btn-animated-1">Подробнее</a>
+                <div class="advantage">
+                    <h2>48 часов</h2>
+                    <p>Без подзарядки</p>
+                </div>
+            </div>
+            <div class="slider-3">
+                <img src="img/quadrocopter.jpg" alt="">
+                <h1> Порхает как бабочка, жалит как пчела!</h1>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a href="" class="btn-animated-1">Подробнее</a>
+                <div class="advantage">
+                    <h2>800 м</h2>
+                    <p>Дальность полета</p>
+                </div>
+                <div class="advantage">
+                    <h2>50 м</h2>
+                    <p>Радиус поражения</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="popular">
+        <ul class="menu-popular">
+            <li>
+                <a href="#"><img src="img/popular1.jpg" alt="Виртуальная реальность">Виртуальная реальность</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/popular2.jpg" alt="Моноподы для селфи">Моноподы для селфи</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/popular3.jpg" alt="Экшн-камеры">Экшн-камеры</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/popular4.jpg" alt="Фитнес-браслеты">Фитнес-браслеты</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/popular5.jpg" alt="Умные часы">Умные часы</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/popular6.jpg" alt="Квадрокоптеры">Квадрокоптеры</a>
+            </li>
+        </ul>
+    </section>
 
-    <div class="to_be_able_to_collapse_this_text">
-        <!--
-              Слайдер 1
-              Делай селфи,
-              как Бен Стиллер!
-              -
-              Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              -
-              Подробнее
-              -
-              8,5 м Длина палки; 5 кг Вес палки; Карбон Материал
-              -
-              Слайдер 2
-              Худеем правильно!
-              -
-              Мотивирующие фитнес-браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.
-              -
-              Подробнее
-              -
-              48 часов Без подзарядки
-              -
-              Слайдер 3
-              Порхает как бабочка, жалит как пчела!
-              -
-              Этот обычный, на первый взгляд, квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.
-              -
-              800 м Дальность полета; 50 м Радиус поражения
-              -->
-    </div>
+    <section class="services">
+        <div class="services-slider">
+            <input type="radio" id="services-btn-1">
+            <input type="radio" id="services-btn-2">
+            <input type="radio" id="services-btn-3">
+        </div>
+        <div class="services-slider-control">
+            <label for="services-btn-1" class="btn-animated-2">Доставка</label>
+            <label for="services-btn-2" class="btn-animated-2">Гарантия</label>
+            <label for="services-btn-3" class="btn-animated-2">Кредит</label>
+        </div>
+        <div class="services-slider-description-1">
+            <h1>Доставка</h1>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img src="img/delivery.jpg" alt="">
+        </div>
+        <div class="services-slider-description-2">
+            <h1>Гарантия</h1>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <img src="img/warranty.jpg" alt="">
+        </div>
+        <div class="services-slider-description-3">
+            <h1>Кредит</h1>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <img src="img/credit.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="logotypes_section">
+        <img src="img/logo-1.jpg" alt="" class="logotypes">
+        <img src="img/logo-2.jpg" alt="" class="logotypes">
+        <img src="img/logo-3.jpg" alt="" class="logotypes">
+        <img src="img/logo-4.jpg" alt="" class="logotypes">
+    </section>
+
+    <section class="info">
+        <h1>О нас</h1>
+        <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="" class="btn-big">Подробне о нас</a>
+    </section>
+
+    <section class="contact">
+        <h1>Контакты</h1>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <!-- Тут должна быть карта. -->
+        <a href="" class="btn-big">Напишите нам</a>
+    </section>
+
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «
         <a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 
 
     <footer>
-        <h1 class="footer_logo logo">Device</h1>
-        <div class="footer_user_tools">
-            <div class="footer_login">
+        <h1 class="footer-logo logo">Device</h1>
+        <div class="footer-user-tools">
+            <div class="footer-login">
                 <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div -->
             </div>
-            <a href="#" class="btn_small compare">Сравнить</a>
-            <a href="#" class="btn_small shopping_cart">Корзина</a>
+            <a href="#" class="btn-small compare">Сравнить</a>
+            <a href="#" class="btn-small shopping-cart">Корзина</a>
         </div>
-        <div class="footer_adress">
+        <div class="footer-adress">
             <p>г.Москва, ул.Строителей, 15</p>
         </div>
-        <nav class="footer_navigation">
-            <a href="#" class="btn_big">Доставка</a>
-            <a href="#" class="btn_big">Гарантия</a>
-            <a href="#" class="btn_big">Контакты</a>
+        <nav class="footer-navigation">
+            <a href="#" class="btn-big">Доставка</a>
+            <a href="#" class="btn-big">Гарантия</a>
+            <a href="#" class="btn-big">Контакты</a>
         </nav>
-        <div class="footer_phone">
+        <div class="footer-phone">
             <p>Тел.: +7 (495) 495-95-95</p>
         </div>
-        <div class="footer_social">
+        <div class="footer-social">
             <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
             <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
             <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
