@@ -8,13 +8,26 @@
  <link rel="stylesheet" href="css/normalize.css">
  <!-- ^ Пусть пока будет -->
 </head>
+<!--
+Заголовок это ЗАГОЛОВОК, как глава в книге, он описывает идущий далее текст. Проверить на лишние заголовки. популярные товары, сервисы и наименование -заголовки.
+Список - перечень однородных! элементов.
+Р - структурный элемент, а не смысловой. Можно в Р объеденить элементы формы (label+input) и иные PHRASE элементы. Он группирует фразовые элементы
+Вложить input в label
+IMG убрать фоновые! Контекстные картинки - важные, без них намного хуже будет подача информации. Фоновые - так, для красоты, декоартивные.
+Какие из кнопок на макете - <a>, а какие <button> - ни черта понять не могу. Точнее, какие их них - мертвые, а какие должны что-то делать при щелчке.
+Сверстать модальные окна.
+span мелкие текстовые элементы, полезен для удобной стилизации этих элементов.
+Alt должно быть со смыслом.
+
+
+ -->
 
 <body>
  <header class="main-header">
   <a class="main-header-logo">
    <img class="logo" src="img/logo.jpg" alt="Лого">
   </a>
-  <nav class="main-header-user-tools">
+  <div class="main-header-user-tools">
    <form>
     <input type="search" id="header-search-field" value="Поиск по сайту">
    </form>
@@ -23,7 +36,7 @@
    </div>
    <a class="btn-small compare" href="#">Сравнить</a>
    <a class="btn-small shopping-cart" href="#">Корзина</a>
-  </nav>
+  </div>
   <nav class="main-header-navigation">
    <ul class="main-header-menu-popular">
     <li>
@@ -51,28 +64,30 @@
      </ul>
     </li>
    </ul>
-   <a class="btn-big" href="#">Доставка</a>
-   <a class="btn-big" href="#">Гарантия</a>
-   <a class="btn-big" href="#">Контакты</a>
+   <a class="btn-big" href="index.html#delivery">Доставка</a>
+   <a class="btn-big" href="index.html#guarantee">Гарантия</a>
+   <a class="btn-big" href="index.html#contacts">Контакты</a>
   </nav>
  </header>
  <main>
-  <nav class="catalog-navigation">
 
+  <span class="catalog-navigation">
    <!-- Содержимое заголовка и пути к товару должно меняться динамично, или нет? И каким тегами этот путь указывать? Динамического решения, кроме как через JS, не могу пока придумать-->
-  </nav>
+  </span>
 
-  <section class="sort">
+  <span class="sort">
+   <!-- Это должны быть рабочие кнопки или просто надписи? -->
    <h2 class="visually-hidden">Сортировка</h2>
    <p>Сортировка:</p>
    <p>По цене</p>
    <p>По типу</p>
    <p>По популярности</p>
    <!-- ниже заготовка блока со стрелочками сортировки -->
-   <div class="arrow up">вверх</div>
-   <div class="arrow down">вниз</div>
-  </section>
+   <div class="arrow-up">вверх</div>
+   <div class="arrow-down">вниз</div>
+  </span>
 
+  <!-- Пока закомментирую, так как формы мы не проходили
   <section class="filter">
    <h3>Фильтр:</h3>>
    <form action="#" name="catalog-filter">
@@ -111,49 +126,50 @@
      <label for="BTno">Нет</label>
     </fieldset>
    </form>
-  </section>
+  </section> -->
 
   <section class="items">
-   <h2>Блок с товарами</h2>
-   <!-- Может есть способ организации поинтереснее? Или наименование и цену в таблицу заключить?-->
+   <h2 class="visually-hidden">Блок с товарами</h2>
+   <!-- Может есть способ организации поинтереснее? Или наименование и цену в таблицу заключить? Плюс явно напрашивается организация списком.-->
    <div>
-    <img src="img/simple-selfy" alt="Любительская селфи-палка">
-    <p class="description">Любительская селфи-палка</p>
+    <img src="img/simple-selfy.jpg" alt="Любительская селфи-палка">
+    <h3 class="description">Любительская селфи-палка</h3>
     <p class="price">500 руб.</p>
     <a href="#" class="btn-big">В корзину</a>
     <a href="#" class="compare">Добавить к сравнению</a>
    </div>
    <div>
-    <img src="img/pro-selfy" alt="Профессиональная селфи-палка">
-    <p class="description">Профессиональная селфи-палка</p>
+    <img src="img/pro-selfy.jpg" alt="Профессиональная селфи-палка">
+    <h3 class="description">Профессиональная селфи-палка</h3>
     <p class="price">1500 руб.</p>
     <a href="#" class="btn-big">В корзину</a>
     <a href="#" class="compare">Добавить к сравнению</a>
    </div>
    <div>
-    <img src="img/water-selfy" alt="Непотопляемая селфи-палка">
-    <p class="description">Непотопляемая селфи-палка</p>
+    <img src="img/water-selfy.jpg" alt="Непотопляемая селфи-палка">
+    <h3 class="description">Непотопляемая селфи-палка</h3>
     <p class="price">2500 руб.</p>
     <a href="#" class="btn-big">В корзину</a>
     <a href="#" class="compare">Добавить к сравнению</a>
    </div>
    <div>
-    <img src="followme-selfy" alt="Селфи-палка Следуй за мной">
-    <p class="description">Селфи-палка "Следуй за мной"</p>
+    <img src="followme-selfy.jpg" alt="Селфи-палка Следуй за мной">
+    <h3 class="description">Селфи-палка "Следуй за мной"</h3>
     <p class="price">4900 руб.</p>
     <a href="#" class="btn-big">В корзину</a>
     <a href="#" class="compare">Добавить к сравнению</a>
    </div>
+   <div class="pages">
+    <h2 class="visually-hidden">Список страниц</h2>
+    <a href="#" class="pages-backward">Назад</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#" class="pages-forward">Вперед</a>
+   </div>
   </section>
 
-  <nav class="pages">
-   <h2>Список страниц</h2>
-   <a href="#" class="backward">Назад</a>
-   <a href="#">1</a>
-   <a href="#">2</a>
-   <a href="#">3</a>
-   <a href="#" class="forward">Вперед</a>
-  </nav>
+
 
  </main>
  <footer>
@@ -171,9 +187,9 @@
    г.Москва, ул.Строителей, 15
   </span>
   <nav class="footer-navigation">
-   <a class="" href="#">Доставка</a>
-   <a class="" href="#">Гарантия</a>
-   <a class="" href="#">Контакты</a>
+   <a class="btn-big" href="index.html#delivery">Доставка</a>
+   <a class="btn-big" href="index.html#guarantee">Гарантия</a>
+   <a class="btn-big" href="index.html#contacts">Контакты</a>
   </nav>
   <span class="footer-phone">
    Тел.: +7 (495) 495-95-95

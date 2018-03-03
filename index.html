@@ -12,9 +12,9 @@
 <body>
  <header class="main-header">
   <a class="main-header-logo">
-   <img class="logo" src="img/logo.jpg" alt="logo">
+   <img class="logo" src="img/logo.jpg" alt="Логотип компании Device">
   </a>
-  <nav class="main-header-user-tools">
+  <div class="main-header-user-tools">
    <form>
     <input type="search" id="header-search-field" value="Поиск по сайту">
    </form>
@@ -23,7 +23,7 @@
    </div>
    <a class="btn-small compare" href="#">Сравнить</a>
    <a class="btn-small shopping-cart" href="#">Корзина</a>
-  </nav>
+  </div>
   <nav class="main-header-navigation">
    <ul class="main-header-menu-popular">
     <li>
@@ -50,16 +50,16 @@
      </ul>
     </li>
    </ul>
-   <a class="btn-big" href="#">Доставка</a>
-   <a class="btn-big" href="#">Гарантия</a>
-   <a class="btn-big" href="#">Контакты</a>
+   <a class="btn-big" href="#delivery">Доставка</a>
+   <a class="btn-big" href="#guarantee">Гарантия</a>
+   <a class="btn-big" href="#contacts">Контакты</a>
 
   </nav>
  </header>
 
  <main>
   <section class="top-slider">
-   <h1 class="visually-hidden">Главный слайдер</h1>
+   <h2 class="visually-hidden">Главный слайдер</h2>
    <div class="hot-items-slider">
     <input type="radio" id="hot-items-btn-1" name="toggle" checked>
     <input type="radio" id="hot-items-btn-2" name="toggle">
@@ -73,7 +73,7 @@
    <div class="hot-items-slides">
     <div class="slider-1">
      <!--Может тут дивы на figure Заменить? -->
-     <img src="img/ben.jpg" alt="">
+     <img src="img/ben.jpg" alt="Огроменная, складная селфи-палка">
      <h3>Делай селфи, как Бен Стиллер!</h3>
      <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
      <a href="" class="btn-animated-1">Подробнее</a>
@@ -91,7 +91,7 @@
      </table>
     </div>
     <div class="slider-2">
-     <img src="img/clocks.jpg" alt="">
+     <img src="img/clocks.jpg" alt="Стильный, но безжалостный, фитнес-браслет">
      <h3>Худеем правильно!</h3>
      <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
      <a class="btn-animated-1" href="">Подробнее</a>
@@ -105,7 +105,7 @@
      </table>
     </div>
     <div class="slider-3">
-     <img src="img/quadrocopter.jpg" alt="">
+     <img src="img/quadrocopter.jpg" alt="Квадрокоптер с лазером!">
      <h3> Порхает как бабочка, жалит как пчела!</h3>
      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
      <a class="btn-animated-1" href="">Подробнее</a>
@@ -123,7 +123,8 @@
    </div>
   </section>
 
-  <nav class="popular">
+  <section class="popular">
+   <h2 class="visually-hidden">Популярные товары</h2>
    <ul class="menu-popular">
     <li>
      <a href="#">
@@ -150,9 +151,10 @@
       <img src="img/popular6.jpg" alt="Квадрокоптеры">Квадрокоптеры</a>
     </li>
    </ul>
-  </nav>
+  </section>
 
-  <!--  <section class="services">
+  <!--Переделал раздел. Теперь он списком. Пока не хочу удалять, вдруг пригодиться.
+     <section class="services">
         <div class="services-slider">
             <input type="radio" id="services-btn-1">
             <input type="radio" id="services-btn-2">
@@ -181,26 +183,22 @@
     </section> -->
 
   <section class="services_section">
-   <!-- А как сделать превратить его в слайдер? -->
    <h2 class="visually-hidden">Сервисы</h2>
    <ul class="services">
     <li>
-     <h3>Доставка</h3>
+     <h3 name="delivery">Доставка</h3>
      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
       его на ваш этаж.</p>
-     <img src="img/delivery.jpg" alt="">
     </li>
     <li>
-     <h3>Гарантия</h3>
+     <h3 name="guarantee">Гарантия</h3>
      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом,
       конечно же.</p>
-     <img src="img/warranty.jpg" alt="">
     </li>
     <li>
-     <h3>Кредит</h3>
+     <h3 name="credit">Кредит</h3>
      <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
       для нашего банка, разумеется.</p>
-     <img src="img/credit.jpg" alt="">
     </li>
    </ul>
   </section>
@@ -209,22 +207,22 @@
    <h2 class="visually-hidden">Логотипы</h2>
    <ul class=logotypes-list>
     <li>
-     <img src="img/logo-1.jpg" alt="DJI" class="logotypes">
+     <img src="img/logo-DJI.jpg" alt="DJI" class="logotypes">
     </li>
     <li>
-     <img src="img/logo-2.jpg" alt="SP-gadgets" class="logotypes">
+     <img src="img/logo-SP.jpg" alt="SP-gadgets" class="logotypes">
     </li>
     <li>
-     <img src="img/logo-3.jpg" alt="GoPro" class="logotypes">
+     <img src="img/logo-GoPro.jpg" alt="GoPro" class="logotypes">
     </li>
     <li>
-     <img src="img/logo-4.jpg" alt="Vive" class="logotypes">
+     <img src="img/logo-Vive.jpg" alt="Vive" class="logotypes">
     </li>
    </ul>
   </section>
 
   <section class="info">
-   <h3 class="">О нас</h3>
+   <h3 class="about-us">О нас</h3>
    <p>
     Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные
     точки России! DEVICE работает со многими транспортными компаниями:
@@ -238,9 +236,9 @@
   </section>
 
   <section class="contact">
-   <h3>Контакты</h3>
+   <h3 name="contacts">Контакты</h3>
    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-   <!-- Тут должна быть карта. -->
+   <!-- Тут должна быть карта. Просто картинкой влепить?-->
    <a href="" class="btn-animated-1">Напишите нам</a>
   </section>
 
@@ -260,9 +258,9 @@
    <p>г.Москва, ул.Строителей, 15</p>
   </div>
   <nav class="footer-navigation">
-   <a class="" href="#">Доставка</a>
-   <a class="" href="#">Гарантия</a>
-   <a class="" href="#">Контакты</a>
+   <a class="btn-big" href="#delivery">Доставка</a>
+   <a class="btn-big" href="#guarantee">Гарантия</a>
+   <a class="btn-big" href="#contacts">Контакты</a>
   </nav>
   <div class="footer-phone">
    <p>Тел.: +7 (495) 495-95-95</p>
