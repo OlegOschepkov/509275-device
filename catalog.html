@@ -2,216 +2,227 @@
 <html lang="en">
 
 <head>
- <meta charset="utf-8">
- <title>HTML Academy: Девайс</title>
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/normalize.css">
- <!-- ^ Пусть пока будет -->
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
-<!--
-Заголовок это ЗАГОЛОВОК, как глава в книге, он описывает идущий далее текст. Проверить на лишние заголовки. популярные товары, сервисы и наименование -заголовки.
-Список - перечень однородных! элементов.
-Р - структурный элемент, а не смысловой. Можно в Р объеденить элементы формы (label+input) и иные PHRASE элементы. Он группирует фразовые элементы
-Вложить input в label
-IMG убрать фоновые! Контекстные картинки - важные, без них намного хуже будет подача информации. Фоновые - так, для красоты, декоартивные.
-Какие из кнопок на макете - <a>, а какие <button> - ни черта понять не могу. Точнее, какие их них - мертвые, а какие должны что-то делать при щелчке.
-Сверстать модальные окна.
-span мелкие текстовые элементы, полезен для удобной стилизации этих элементов.
-Alt должно быть со смыслом.
-
-
- -->
 
 <body>
- <header class="main-header">
-  <a class="main-header-logo">
-   <img class="logo" src="img/logo.jpg" alt="Лого">
-  </a>
-  <div class="main-header-user-tools">
-   <form>
-    <input type="search" id="header-search-field" value="Поиск по сайту">
-   </form>
-   <div class="main-header-login">
-    <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div, позже разберусь -->
-   </div>
-   <a class="btn-small compare" href="#">Сравнить</a>
-   <a class="btn-small shopping-cart" href="#">Корзина</a>
-  </div>
-  <nav class="main-header-navigation">
-   <ul class="main-header-menu-popular">
-    <li>
-     <!-- Куда должны вести эти ссылки? Просто на catalog.html, или при этом в каталоге должна осуществляться фильрация по типу товара? -->
-     <a class="btn-big sub-menu" href="#">Каталог товаров</a>
-     <ul>
-      <li>
-       <a href="#">Виртуальная реальность</a>
-      </li>
-      <li>
-       <a href="#">Моноподы для селфи</a>
-      </li>
-      <li>
-       <a href="#">Экшн-камеры</a>
-      </li>
-      <li>
-       <a href="#">Фитнес-браслеты</a>
-      </li>
-      <li>
-       <a href="#">Умные часы</a>
-      </li>
-      <li>
-       <a href="#">Квадрокоптеры</a>
-      </li>
-     </ul>
-    </li>
-   </ul>
-   <a class="btn-big" href="index.html#delivery">Доставка</a>
-   <a class="btn-big" href="index.html#guarantee">Гарантия</a>
-   <a class="btn-big" href="index.html#contacts">Контакты</a>
-  </nav>
- </header>
- <main>
+  <header class="main-header">
+    <a class="main-header-logo">
+      <img class="logo" src="img/logo.jpg" alt="Логотип компании Device">
+    </a>
+    <div class="main-header-user-tools">
+      <form>
+        <input type="search" id="header-search-field" value="Поиск по сайту">
+        <input type="submit" value="Найти">
+      </form>
+      <div class="main-user-menu">
+        <div class="main-header-login">
+          <a href="#" class="btn-small">Войти</a>
+        </div>
+        <a class="btn-small compare" href="#">Сравнить</a>
+        <a class="btn-small shopping-cart" href="#">Корзина</a>
+      </div>
+    </div>
+    <nav class="main-header-navigation">
+      <ul class="main-header-menu-list">
+        <li>
+          <a class="btn-big sub-menu" href="#">Каталог товаров</a>
+          <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="main-header-services">
+        <a class="btn-big" href="#delivery">Доставка</a>
+        <a class="btn-big" href="#guarantee">Гарантия</a>
+        <a class="btn-big" href="#contacts">Контакты</a>
+      </div>
+    </nav>
+  </header>
 
-  <span class="catalog-navigation">
-   <!-- Содержимое заголовка и пути к товару должно меняться динамично, или нет? И каким тегами этот путь указывать? Динамического решения, кроме как через JS, не могу пока придумать-->
-  </span>
+  <main>
+    <section class="breadcrumbs">
+      <h1>Моноподы для селфи</h1>
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a>Моноподы для селфи</a>
+        </li>
+      </ul>
+    </section>
 
-  <span class="sort">
-   <!-- Это должны быть рабочие кнопки или просто надписи? -->
-   <h2 class="visually-hidden">Сортировка</h2>
-   <p>Сортировка:</p>
-   <p>По цене</p>
-   <p>По типу</p>
-   <p>По популярности</p>
-   <!-- ниже заготовка блока со стрелочками сортировки -->
-   <div class="arrow-up">вверх</div>
-   <div class="arrow-down">вниз</div>
-  </span>
+    <section class="filter">
+      <h3>Фильтр:</h3>>
+      <form action="#" name="catalog-filter">
+        <fieldset class="price-range">
+          <legend>Стоимость</legend>
+          <input type="range" min="0" max="10000" step="100" value="5000">
+        </fieldset>
+        <fieldset class="item-color">
+          <legend>Цвет</legend>
+          <div>
+            <input type="checkbox" name="item-color" id="black" value="black">
+            <label for="black">Черный</label>
+          </div>
+          <div>
+            <input type="checkbox" name="item-color" id="white" value="white">
+            <label for="white">Белый</label>
+          </div>
+          <div>
+            <input type="checkbox" name="item-color" id="blue" value="blue">
+            <label for="blue">Синий</label>
+          </div>
+          <div>
+            <input type="checkbox" name="item-color" id="red" value="red">
+            <label for="red">Красный</label>
+          </div>
+          <div>
+            <input type="checkbox" name="item-color" id="pink" value="pink">
+            <label for="pink">Розовый</label>
+          </div>
+        </fieldset>
+        <fieldset class="bluetooth">
+          <legend>Bluetooth</legend>
+          <input type="radio" name="bluetooth" id="BTyes" value="BTyes">
+          <label for="BTyes">Есть</label>
+          <input type="radio" name="bluetooth" id="BTno" value="BTno">
+          <label for="BTno">Нет</label>
+        </fieldset>
+      </form>
+    </section>
 
-  <!-- Пока закомментирую, так как формы мы не проходили
-  <section class="filter">
-   <h3>Фильтр:</h3>>
-   <form action="#" name="catalog-filter">
-    <fieldset class="price-range">
-     <legend>Стоимость</legend>
-     <input type="range" min="0" max="10000" step="100" value="5000">
-    </fieldset>
-    <fieldset class="item-color">
-     <legend>Цвет</legend>
-     <div>
-      <input type="checkbox" name="item-color" id="black" value="black">
-      <label for="black">Черный</label>
-     </div>
-     <div>
-      <input type="checkbox" name="item-color" id="white" value="white">
-      <label for="white">Белый</label>
-     </div>
-     <div>
-      <input type="checkbox" name="item-color" id="blue" value="blue">
-      <label for="blue">Синий</label>
-     </div>
-     <div>
-      <input type="checkbox" name="item-color" id="red" value="red">
-      <label for="red">Красный</label>
-     </div>
-     <div>
-      <input type="checkbox" name="item-color" id="pink" value="pink">
-      <label for="pink">Розовый</label>
-     </div>
-    </fieldset>
-    <fieldset class="bluetooth">
-     <legend>Bluetooth</legend>
-     <input type="radio" name="bluetooth" id="BTyes" value="BTyes">
-     <label for="BTyes">Есть</label>
-     <input type="radio" name="bluetooth" id="BTno" value="BTno">
-     <label for="BTno">Нет</label>
-    </fieldset>
-   </form>
-  </section> -->
+    <section class="main-catalog">
+      <h2 class="visually-hidden">Блок с товарами</h2>
+      <div class="sort">
+        <h3>Сортировка</h3>
+        <p>По цене</p>
+        <p>По типу</p>
+        <p>По популярности</p>
+        <div class="arrow-up">вверх</div>
+        <div class="arrow-down">вниз</div>
+      </div>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <img src="img/simple-selfy.jpg" alt="Любительская селфи-палка">
+          <div class="catalog-description">
+            <h3 class="description">
+              <a href="#">Любительская селфи-палка</a>
+            </h3>
+            <p class="price">500 руб.</p>
+          </div>
+          <div class="catalog-item-overlay">
+            <button class="btn btn-1">В корзину</button>
+            <button class="compare">Добавить к сравнению</button>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <img src="img/pro-selfy.jpg" alt="Профессиональная селфи-палка">
+            <div class="catalog-description">
+              <h3 class="description">Профессиональная селфи-палка</h3>
+              <p class="price">1500 руб.</p>
+            </div>
+            <div class="catalog-item-overlay">
+              <a href="#" class="btn-big">В корзину</a>
+              <a href="#" class="compare">Добавить к сравнению</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <img src="img/water-selfy.jpg" alt="Непотопляемая селфи-палка">
+            <div class="catalog-description">
+              <h3 class="description">Непотопляемая селфи-палка</h3>
+              <p class="price">2500 руб.</p>
+            </div>
+            <div class="catalog-item-overlay">
+              <a href="#" class="btn-big">В корзину</a>
+              <a href="#" class="compare">Добавить к сравнению</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <img src="followme-selfy.jpg" alt="Селфи-палка Следуй за мной">
+            <div class="catalog-description">
+              <h3 class="description">Селфи-палка "Следуй за мной"</h3>
+              <p class="price">4900 руб.</p>
+            </div>
+            <div class="catalog-item-overlay">
+              <a href="#" class="btn-big">В корзину</a>
+              <a href="#" class="compare">Добавить к сравнению</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="pagination">
+        <a href="#" class="pagination-backward">Назад</a>
+        <p class="pagination-numbers">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </p>
+        <a href="#" class="pagination-forward">Вперед</a>
+      </div>
+    </section>
+  </main>
 
-  <section class="items">
-   <h2 class="visually-hidden">Блок с товарами</h2>
-   <!-- Может есть способ организации поинтереснее? Или наименование и цену в таблицу заключить? Плюс явно напрашивается организация списком.-->
-   <div>
-    <img src="img/simple-selfy.jpg" alt="Любительская селфи-палка">
-    <h3 class="description">Любительская селфи-палка</h3>
-    <p class="price">500 руб.</p>
-    <a href="#" class="btn-big">В корзину</a>
-    <a href="#" class="compare">Добавить к сравнению</a>
-   </div>
-   <div>
-    <img src="img/pro-selfy.jpg" alt="Профессиональная селфи-палка">
-    <h3 class="description">Профессиональная селфи-палка</h3>
-    <p class="price">1500 руб.</p>
-    <a href="#" class="btn-big">В корзину</a>
-    <a href="#" class="compare">Добавить к сравнению</a>
-   </div>
-   <div>
-    <img src="img/water-selfy.jpg" alt="Непотопляемая селфи-палка">
-    <h3 class="description">Непотопляемая селфи-палка</h3>
-    <p class="price">2500 руб.</p>
-    <a href="#" class="btn-big">В корзину</a>
-    <a href="#" class="compare">Добавить к сравнению</a>
-   </div>
-   <div>
-    <img src="followme-selfy.jpg" alt="Селфи-палка Следуй за мной">
-    <h3 class="description">Селфи-палка "Следуй за мной"</h3>
-    <p class="price">4900 руб.</p>
-    <a href="#" class="btn-big">В корзину</a>
-    <a href="#" class="compare">Добавить к сравнению</a>
-   </div>
-   <div class="pages">
-    <h2 class="visually-hidden">Список страниц</h2>
-    <a href="#" class="pages-backward">Назад</a>
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#" class="pages-forward">Вперед</a>
-   </div>
-  </section>
-
-  <section class="modal">
-   <div class="modal-map">
-    <!--Надо как-то прикрутить карту. Просто картинка? -->
-   </div>
-   <div class="modal-write-us">
-    <!-- Тут будет форма. -->
-   </div>
-  </section>
-
-
- </main>
- <footer>
-  <a class="main-footer-logo">
-   <img class="logo" src="img/logo.jpg" alt="logo">
-  </a>
-  <div class="footer-user-tools">
-   <div class="footer-login">
-    <!---"Войти". Не вижу в PSD файлах как должны быть оформлены поля ввода логина-пароля и кнопка "вход". Временно будет как div -->
-   </div>
-   <a class="btn-small compare" href="#">Сравнить</a>
-   <a class="btn-small shopping-cart" href="#">Корзина</a>
-  </div>
-  <span class="footer-adress">
-   г.Москва, ул.Строителей, 15
-  </span>
-  <nav class="footer-navigation">
-   <a class="btn-big" href="index.html#delivery">Доставка</a>
-   <a class="btn-big" href="index.html#guarantee">Гарантия</a>
-   <a class="btn-big" href="index.html#contacts">Контакты</a>
-  </nav>
-  <span class="footer-phone">
-   Тел.: +7 (495) 495-95-95
-  </span>
-  <div class="footer-social">
-   <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
-   <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
-   <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
-  </div>
-  <div class="footer-copyright">
-   <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
-  </div>
-
- </footer>
+  <footer>
+    <div class="main-footer-top">
+      <a class="main-footer-logo">
+        <img class="logo" src="img/logo.jpg" alt="logo">
+      </a>
+      <div class="footer-user-tools">
+        <div class="main-footer-login">
+          <a href="#" class="btn-small">Войти</a>
+        </div>
+        <a class="btn-small compare" href="#">Сравнить</a>
+        <a class="btn-small shopping-cart" href="#">Корзина</a>
+      </div>
+    </div>
+    <div class="main-footer-middle">
+      <div class="footer-adress">
+        <p>г.Москва, ул.Строителей, 15</p>
+      </div>
+      <nav class="footer-navigation">
+        <a class="btn-big" href="#delivery">Доставка</a>
+        <a class="btn-big" href="#guarantee">Гарантия</a>
+        <a class="btn-big" href="#contacts">Контакты</a>
+      </nav>
+      <div class="footer-phone">
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="main-footer-bottom">
+        <div class="footer-social">
+          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
+          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
+          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
+        </div>
+        <div class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
