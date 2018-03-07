@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <a class="main-header-logo">
-      <img class="logo" src="img/logo.jpg" alt="Логотип компании Device">
+      <img class="logo" src="img/logo.png" alt="Логотип компании Device">
     </a>
     <div class="main-header-user-tools">
       <form>
@@ -29,19 +29,19 @@
     <nav class="main-header-navigation">
       <ul class="main-header-menu-list">
         <li>
-          <a class="btn-big sub-menu" href="#">Каталог товаров</a>
+          <a class="btn-big sub-menu" href="catalog.html">Каталог товаров</a>
           <ul>
             <li>
-              <a href="#">Виртуальная реальность</a>
-              <a href="#">Моноподы для селфи</a>
-              <a href="#">Экшн-камеры</a>
+              <a href="catalog#vr">Виртуальная реальность</a>
+              <a href="catalog#monopods">Моноподы для селфи</a>
+              <a href="catalog#">Экшн-камеры</a>
             </li>
             <li>
-              <a href="#">Фитнес-браслеты</a>
-              <a href="#">Умные часы</a>
+              <a href="catalog#wristband">Фитнес-браслеты</a>
+              <a href="catalog#watches">Умные часы</a>
             </li>
             <li>
-              <a href="#">Квадрокоптеры</a>
+              <a href="catalog#quadro">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
@@ -67,7 +67,7 @@
       </div>
       <div class="hot-items-slides">
         <div class="slider-1">
-          <img src="img/ben.jpg" alt="Огроменная, складная селфи-палка">
+          <img src="img/ben.png" alt="Огроменная, складная селфи-палка">
           <div class="slide-description">
             <h3>Делай селфи, как Бен Стиллер!</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="slider-2">
-          <img src="img/clocks.jpg" alt="Стильный, но безжалостный, фитнес-браслет">
+          <img src="img/watches.png" alt="Стильный, но безжалостный, фитнес-браслет">
           <div class="slide-description">
             <h3>Худеем правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="slider-3">
-          <img src="img/quadrocopter.jpg" alt="Квадрокоптер с лазером!">
+          <img src="img/quadrocopter.png" alt="Квадрокоптер с лазером!">
           <div class="slide-description">
             <h3> Порхает как бабочка, жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -193,22 +193,22 @@
       <ul class="logotypes-list">
         <li class="logotypes-item">
           <a href="#">
-            <img src="img/logo-DJI.jpg" alt="DJI" class="logotypes">
+            <img src="img/logo-DJI.png" alt="DJI" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <img src="img/logo-SP.jpg" alt="SP-gadgets" class="logotypes">
+            <img src="img/logo-SP.png" alt="SP-gadgets" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <img src="img/logo-GoPro.jpg" alt="GoPro" class="logotypes">
+            <img src="img/logo-GoPro.png" alt="GoPro" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <img src="img/logo-Vive.jpg" alt="Vive" class="logotypes">
+            <img src="img/logo-Vive.png" alt="Vive" class="logotypes">
           </a>
         </li>
       </ul>
@@ -231,16 +231,40 @@
       <div class="contacts">
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="#" alt="Карта проезда. Ул. Строителей, 15">
+        <a href="https://www.google.ru/maps">
+          <img src="img/map.jpg" alt="Карта проезда. Ул. Строителей, 15">
+        </a>
         <a href="#" class="btn-animated-1">Напишите нам</a>
       </div>
     </section>
+
+    <section class="modal-map">
+      <h3 class="visually-hidden">Карта крупным планом</h3>
+      <img src="img/map-big.jpg" alt="Карта крупным планом. Ул. Строителей, 15">
+    </section>
+
+    <section class="modal-write-us">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <form action="#" name="modal-feedback">
+        <label for="feedback_name">
+          <input type="text" id="feedback_name" value="Имя Фамилия">Ваше имя
+        </label>
+        <label for="feedback-email">
+          <input type="email" id="feedback-email" value="email@example.com">Ващ e-mail
+        </label>
+        <label for="feedback-text">
+          <input type="text" id="feedback-text" value="В свободной форме">Текст письма
+        </label>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+
   </main>
 
   <footer>
     <div class="main-footer-top">
       <a class="main-footer-logo">
-        <img class="logo" src="img/logo.jpg" alt="logo">
+        <img class="logo" src="img/logo.png" alt="logo">
       </a>
       <div class="footer-user-tools">
         <div class="main-footer-login">

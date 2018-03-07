@@ -10,8 +10,8 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header-logo">
-      <img class="logo" src="img/logo.jpg" alt="Логотип компании Device">
+    <a class="main-header-logo" href="index.html">
+      <img class="logo" src="img/logo.png" alt="Логотип компании Device">
     </a>
     <div class="main-header-user-tools">
       <form>
@@ -20,7 +20,8 @@
       </form>
       <div class="main-user-menu">
         <div class="main-header-login">
-          <a href="#" class="btn-small">Войти</a>
+          <a href="/profile.html" class="btn-small">Валентин Петухов</a>
+          <a href="#">Выйти</a>
         </div>
         <a class="btn-small compare" href="#">Сравнить</a>
         <a class="btn-small shopping-cart" href="#">Корзина</a>
@@ -32,16 +33,16 @@
           <a class="btn-big sub-menu" href="#">Каталог товаров</a>
           <ul>
             <li>
-              <a href="#">Виртуальная реальность</a>
-              <a href="#">Моноподы для селфи</a>
-              <a href="#">Экшн-камеры</a>
+              <a href="catalog#vr">Виртуальная реальность</a>
+              <a href="catalog#monopods">Моноподы для селфи</a>
+              <a href="catalog#">Экшн-камеры</a>
             </li>
             <li>
-              <a href="#">Фитнес-браслеты</a>
-              <a href="#">Умные часы</a>
+              <a href="catalog#wristband">Фитнес-браслеты</a>
+              <a href="catalog#watches">Умные часы</a>
             </li>
             <li>
-              <a href="#">Квадрокоптеры</a>
+              <a href="catalog#quadro">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
@@ -59,10 +60,10 @@
       <h1>Моноподы для селфи</h1>
       <ul>
         <li>
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="#">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li>
           <a>Моноподы для селфи</a>
@@ -107,6 +108,7 @@
           <input type="radio" name="bluetooth" id="BTno" value="BTno">
           <label for="BTno">Нет</label>
         </fieldset>
+        <input class="btn btn-1" type="submit" value="Показать">
       </form>
     </section>
 
@@ -138,7 +140,7 @@
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <img src="img/simple-selfy.jpg" alt="Любительская селфи-палка">
+          <img src="img/simple-selfy.png" alt="Любительская селфи-палка">
           <div class="catalog-description">
             <h3 class="description">
               <a href="#">Любительская селфи-палка</a>
@@ -152,9 +154,11 @@
         </li>
         <li class="catalog-item">
           <div>
-            <img src="img/pro-selfy.jpg" alt="Профессиональная селфи-палка">
+            <img src="img/pro-selfy.png" alt="Профессиональная селфи-палка">
             <div class="catalog-description">
-              <h3 class="description">Профессиональная селфи-палка</h3>
+              <h3 class="description">
+                <a href="#">Профессиональная селфи-палка</a>
+              </h3>
               <p class="price">1500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
@@ -165,9 +169,11 @@
         </li>
         <li class="catalog-item">
           <div>
-            <img src="img/water-selfy.jpg" alt="Непотопляемая селфи-палка">
+            <img src="img/water-selfy.png" alt="Непотопляемая селфи-палка">
             <div class="catalog-description">
-              <h3 class="description">Непотопляемая селфи-палка</h3>
+              <h3 class="description">
+                <a href="#">Непотопляемая селфи-палка</a>
+              </h3>
               <p class="price">2500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
@@ -178,9 +184,11 @@
         </li>
         <li class="catalog-item">
           <div>
-            <img src="followme-selfy.jpg" alt="Селфи-палка Следуй за мной">
+            <img src="img/followme-selfy.png" alt="Селфи-палка Следуй за мной">
             <div class="catalog-description">
-              <h3 class="description">Селфи-палка "Следуй за мной"</h3>
+              <h3 class="description">
+                <a href="#">Селфи-палка "Следуй за мной"</a>
+              </h3>
               <p class="price">4900 руб.</p>
             </div>
             <div class="catalog-item-overlay">
@@ -205,7 +213,7 @@
   <footer>
     <div class="main-footer-top">
       <a class="main-footer-logo">
-        <img class="logo" src="img/logo.jpg" alt="logo">
+        <img class="logo" src="img/logo.png" alt="logo">
       </a>
       <div class="footer-user-tools">
         <div class="main-footer-login">
