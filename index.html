@@ -15,7 +15,8 @@
     </a>
     <div class="main-header-user-tools">
       <form>
-        <input type="search" id="header-search-field" value="Поиск по сайту">
+        <!-- пересмотреть лекцию (арзамас) -->
+        <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
         <input type="submit" value="Найти">
       </form>
       <div class="main-user-menu">
@@ -26,7 +27,7 @@
         <a class="btn-small shopping-cart" href="#">Корзина</a>
       </div>
     </div>
-    <nav class="main-header-navigation">
+    <nav class="main-header-navigation" aria-label="Каталог товаров">
       <ul class="main-header-menu-list">
         <li>
           <a class="btn-big sub-menu" href="catalog.html">Каталог товаров</a>
@@ -46,7 +47,7 @@
           </ul>
         </li>
       </ul>
-      <div class="main-header-services">
+      <div class="main-header-services" aria-label="Наши сервисы">
         <a class="btn-big" href="#delivery">Доставка</a>
         <a class="btn-big" href="#guarantee">Гарантия</a>
         <a class="btn-big" href="#contacts">Контакты</a>
@@ -61,12 +62,13 @@
         <input type="radio" id="hot-items-btn-3" name="toggle">
       </div>
       <div class="hot-items-slider-controls">
-        <label for="hot-items-btn-1"></label>
-        <label for="hot-items-btn-2"></label>
-        <label for="hot-items-btn-3"></label>
+        <label for="hot-items-btn-1" aria-label="Первый слайд"></label>
+        <label for="hot-items-btn-2" aria-label="Второй слайд"></label>
+        <label for="hot-items-btn-3" aria-label="Третий слайд"></label>
       </div>
       <div class="hot-items-slides">
         <div class="slider-1">
+          <!-- в критериях указано что фото должны быть в JPG формат, но в нем нет прозрачности. Что делать? -->
           <img src="img/ben.png" width="384" height="486" alt="Огроменная, складная селфи-палка">
           <div class="slide-description">
             <h3>Делай селфи, как Бен Стиллер!</h3>
@@ -193,21 +195,35 @@
       <ul class="logotypes-list">
         <li class="logotypes-item">
           <a href="#">
+            <!--Читал в интернете, что если часть текста на ином, чем указанный в <html lang="ru">, языке, то эту часть надо оборачивать в span
+             и указывать нужный для прочтения надписи язык. Как это сделать внутри aria-label я не знаю, поэтом добавил тэг p с классом visually-hidden -->
+            <p class="visually-hidden">Сайт компании
+              <span lang="en">DJI</span>
+            </p>
             <img src="img/logo-DJI.png" width="260" height="100" alt="DJI" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
+            <p class="visually-hidden">Сайт компании
+              <span lang="en">SP-gadgets</span>
+            </p>
             <img src="img/logo-SP.png" width="260" height="100" alt="SP-gadgets" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
+            <p class="visually-hidden">Сайт компании
+              <span lang="en">GoPro</span>
+            </p>
             <img src="img/logo-GoPro.png" width="260" height="100" alt="GoPro" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
+            <p class="visually-hidden">Сайт компании
+              <span lang="en">Vive</span>
+            </p>
             <img src="img/logo-Vive.png" width="260" height="100" alt="Vive" class="logotypes">
           </a>
         </li>
@@ -231,7 +247,7 @@
       <div class="contacts">
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="https://www.google.ru/maps">
+        <a href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
           <img src="img/map.jpg" width="560" height="222" alt="Карта проезда. Ул. Строителей, 15">
         </a>
         <a href="#" class="btn-animated-1">Напишите нам</a>
@@ -240,20 +256,21 @@
 
     <section class="modal-map">
       <h3 class="visually-hidden">Карта крупным планом</h3>
+      <!--Нужен ли aria-label при наличии alt? -->
       <img src="img/map-big.jpg" width="960" height="559" alt="Карта крупным планом. Ул. Строителей, 15">
     </section>
 
     <section class="modal-write-us">
       <h3 class="visually-hidden">Форма обратной связи</h3>
-      <form action="#" name="modal-feedback">
-        <label for="feedback_name">
-          <input type="text" id="feedback_name" value="Имя Фамилия">Ваше имя
+      <form action="https://echo.htmlacademy.ru" name="modal-feedback">
+        <label for="feedback_name">Ваше имя
+          <input type="text" id="feedback_name" value="Имя Фамилия" required autocomplete="on">
         </label>
-        <label for="feedback-email">
-          <input type="email" id="feedback-email" value="email@example.com">Ващ e-mail
+        <label for="feedback-email">Ваш e-mail
+          <input type="email" id="feedback-email" value="email@example.com" required autocomplete="on">
         </label>
-        <label for="feedback-text">
-          <input type="text" id="feedback-text" value="В свободной форме">Текст письма
+        <label for="feedback-text">Текст письма
+          <input type="text" id="feedback-text" value="В свободной форме" required>
         </label>
         <input type="submit" value="Отправить">
       </form>
@@ -288,12 +305,34 @@
       </div>
       <div class="main-footer-bottom">
         <div class="footer-social">
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
+          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Facebook</span>
+            </p>
+          </a>
+          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Instagram</span>
+            </p>
+          </a>
+          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Twitter</span>
+            </p>
+          </a>
         </div>
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <p class="visually-hidden">Переход на интенсивный курс
+              <b>"
+                <span lang="en">HTML</span> и
+                <span lang="en">CSS</span>, уровень 1"</b> на сайте
+              <span lang="en">HTML Academy</span>
+            </p>
+          </a>
         </div>
       </div>
     </div>

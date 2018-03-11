@@ -15,7 +15,7 @@
     </a>
     <div class="main-header-user-tools">
       <form>
-        <input type="search" id="header-search-field" value="Поиск по сайту">
+        <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
         <input type="submit" value="Найти">
       </form>
       <div class="main-user-menu">
@@ -27,7 +27,7 @@
         <a class="btn-small shopping-cart" href="#">Корзина</a>
       </div>
     </div>
-    <nav class="main-header-navigation">
+    <nav class="main-header-navigation" aria-label="Каталог товаров">
       <ul class="main-header-menu-list">
         <li>
           <a class="btn-big sub-menu" href="#">Каталог товаров</a>
@@ -72,8 +72,9 @@
     </section>
 
     <section class="filter">
-      <h3>Фильтр:</h3>>
-      <form action="#" name="catalog-filter">
+      <h3>Фильтр:</h3>
+      <!-- В index я оборачивал Input в label, а тут связывал через id и for. является или это нарушением единообразия разметки (основной критерий)? -->
+      <form action="https://echo.htmlacademy.ru" name="catalog-filter">
         <fieldset class="price-range">
           <legend>Стоимость</legend>
           <input type="range" min="0" max="10000" step="100" value="5000">
@@ -103,10 +104,10 @@
         </fieldset>
         <fieldset class="bluetooth">
           <legend>Bluetooth</legend>
-          <input type="radio" name="bluetooth" id="BTyes" value="BTyes">
-          <label for="BTyes">Есть</label>
-          <input type="radio" name="bluetooth" id="BTno" value="BTno">
-          <label for="BTno">Нет</label>
+          <input type="radio" name="bluetooth" id="BT-yes" value="BTyes">
+          <label for="BT-yes">Есть</label>
+          <input type="radio" name="bluetooth" id="BT-no" value="BTno">
+          <label for="BT-no">Нет</label>
         </fieldset>
         <input class="btn btn-1" type="submit" value="Показать">
       </form>
@@ -139,6 +140,7 @@
         </div>
       </div>
       <ul class="catalog-list">
+        <!-- У любого товара может быть метка «new». Как сделать? -->
         <li class="catalog-item">
           <img src="img/simple-selfy.png" width="360" height="380" alt="Любительская селфи-палка">
           <div class="catalog-description">
@@ -162,8 +164,8 @@
               <p class="price">1500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <a href="#" class="btn-big">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <button class="btn-big">В корзину</button>
+              <button class="compare">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -177,8 +179,8 @@
               <p class="price">2500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <a href="#" class="btn-big">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <button class="btn-big">В корзину</button>
+              <button class="compare">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -192,8 +194,8 @@
               <p class="price">4900 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <a href="#" class="btn-big">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <button class="btn-big">В корзину</button>
+              <button class="compare">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -237,12 +239,34 @@
       </div>
       <div class="main-footer-bottom">
         <div class="footer-social">
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"></a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy"></a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"></a>
+          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Facebook</span>
+            </p>
+          </a>
+          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Instagram</span>
+            </p>
+          </a>
+          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+            <p class="visually-hidden">Переход на страницу
+              <span lang="en">HTML Academy</span> на
+              <span lang="en">Twitter</span>
+            </p>
+          </a>
         </div>
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <p class="visually-hidden">Переход на интенсивный курс
+              <b>"
+                <span lang="en">HTML</span> и
+                <span lang="en">CSS</span>, уровень 1"</b> на сайте
+              <span lang="en">HTML Academy</span>
+            </p>
+          </a>
         </div>
       </div>
     </div>
