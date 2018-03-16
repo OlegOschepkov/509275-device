@@ -4,60 +4,64 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <header class="main-header">
-    <a class="main-header-logo">
-      <img class="logo" src="img/logo.png" width="160" height="35" alt="Логотип компании Device">
-    </a>
-    <div class="main-header-user-tools">
-      <form>
-        <!-- пересмотреть лекцию (арзамас) -->
-        <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
-        <input type="submit" value="Найти">
-      </form>
-      <div class="main-user-menu">
-        <div class="main-header-login">
-          <a href="#" class="btn-small">Войти</a>
+    <div class="main-header-top">
+      <a class="main-header-logo">
+        <img class="logo btn-1" src="img/logo.png" width="160" height="35" alt="Логотип компании Device">
+      </a>
+    </div>
+    <div class="main-header-middle">
+      <div class="main-header-user-tools">
+        <form>
+          <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
+          <input type="submit" value="Найти">
+        </form>
+        <div class="main-user-menu">
+          <a class="btn-1 enter" href="#">Войти</a>
+          <a class="btn-1 compare" href="#">Сравнить</a>
+          <a class="btn-1 shopping-cart" href="#">Корзина</a>
         </div>
-        <a class="btn-small compare" href="#">Сравнить</a>
-        <a class="btn-small shopping-cart" href="#">Корзина</a>
       </div>
     </div>
-    <nav class="main-header-navigation" aria-label="Каталог товаров">
-      <ul class="main-header-menu-list">
-        <li>
-          <a class="btn-big sub-menu" href="catalog.html">Каталог товаров</a>
-          <ul>
-            <li>
-              <a href="catalog#vr">Виртуальная реальность</a>
-              <a href="catalog#monopods">Моноподы для селфи</a>
-              <a href="catalog#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="catalog#wristband">Фитнес-браслеты</a>
-              <a href="catalog#watches">Умные часы</a>
-            </li>
-            <li>
-              <a href="catalog#quadro">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="main-header-services" aria-label="Наши сервисы">
-        <a class="btn-big" href="#delivery">Доставка</a>
-        <a class="btn-big" href="#guarantee">Гарантия</a>
-        <a class="btn-big" href="#contacts">Контакты</a>
-      </div>
+    <div class="main-header-bottom">
+      <nav class="main-header-navigation" aria-label="Каталог товаров">
+        <ul class="main-header-menu-list">
+          <li>
+            <a class="btn-1 sub-menu" href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li>
+                <a class="btn-1" href="catalog#vr">Виртуальная реальность</a>
+                <a class="btn-1" href="catalog#monopods">Моноподы для селфи</a>
+                <a class="btn-1" href="catalog#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a class="btn-1" href="catalog#wristband">Фитнес-браслеты</a>
+                <a class="btn-1" href="catalog#watches">Умные часы</a>
+              </li>
+              <li>
+                <a class="btn-1" href="catalog#quadro">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="main-header-services" aria-label="Наши сервисы">
+          <a class="btn-1" href="#delivery">Доставка</a>
+          <a class="btn-1" href="#guarantee">Гарантия</a>
+          <a class="btn-1" href="#contacts">Контакты</a>
+        </div>
+    </div>
     </nav>
 
     <section class="top-slider">
       <h2 class="visually-hidden">Главный слайдер</h2>
       <div class="hot-items-slider">
-        <input type="radio" id="hot-items-btn-1" name="toggle" checked>
+        <input type="radio" id="hot-items-btn-1" name="toggle" checked="checked">
         <input type="radio" id="hot-items-btn-2" name="toggle">
         <input type="radio" id="hot-items-btn-3" name="toggle">
       </div>
@@ -68,14 +72,12 @@
       </div>
       <div class="hot-items-slides">
         <div class="slider-1">
-          <!-- в критериях указано что фото должны быть в JPG формат, но в нем нет прозрачности. Что делать? -->
           <img src="img/ben.png" width="384" height="486" alt="Огроменная, складная селфи-палка">
           <div class="slide-description">
             <h3>Делай селфи, как Бен Стиллер!</h3>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
-              килограмм
+            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
             </p>
-            <a href="#" class="btn btn-1">Подробнее</a>
+            <a href="#" class="btn-2">Подробнее</a>
             <table>
               <tr>
                 <td>8,5 м</td>
@@ -95,7 +97,7 @@
           <div class="slide-description">
             <h3>Худеем правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="btn-animated-1" href="#">Подробнее</a>
+            <a class="btn-2" href="#">Подробнее</a>
             <table>
               <tr>
                 <td>48 часов</td>
@@ -109,9 +111,10 @@
         <div class="slider-3">
           <img src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер с лазером!">
           <div class="slide-description">
-            <h3> Порхает как бабочка, жалит как пчела!</h3>
+            <h3>
+              Порхает как бабочка, жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="btn-animated-1" href="#">Подробнее</a>
+            <a class="btn-2" href="#">Подробнее</a>
             <table>
               <tr>
                 <td>800 м</td>
@@ -129,6 +132,7 @@
   </header>
 
   <main>
+
     <section class="popular">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-list">
@@ -157,7 +161,7 @@
       <h2 class="visually-hidden">Сервисы</h2>
       <ul class="services-radio-list">
         <li class="services-radio-item">
-          <input type="radio" class="visually-hidden" id="services-btn-1" checked>
+          <input type="radio" class="visually-hidden" id="services-btn-1" checked="checked">
         </li>
         <li class="services-radio-item">
           <input type="radio" class="visually-hidden" id="services-btn-2">
@@ -167,64 +171,59 @@
         </li>
       </ul>
       <div class="services-slider-control">
-        <label for="services-btn-1">Доставка</label>
-        <label for="services-btn-2">Гарантия</label>
-        <label for="services-btn-3">Кредит</label>
+        <label class="btn-3" for="services-btn-1">Доставка</label>
+        <label class="btn-3" for="services-btn-2">Гарантия</label>
+        <label class="btn-3" for="services-btn-3">Кредит</label>
       </div>
       <ul class="services-list">
         <li class="services-item">
           <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж.</p>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
         <li class="services-item">
           <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не
-            дом, конечно же.</p>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </li>
         <li class="services-item">
           <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
-            Выгодные для нашего банка, разумеется.</p>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </li>
       </ul>
     </section>
 
     <section class="logotypes_section">
-      <h2 class="visually-hidden">Логотипы</h2>
+      <h2 class="visually-hidden">Сайты наших партнеров</h2>
       <ul class="logotypes-list">
         <li class="logotypes-item">
           <a href="#">
-            <!--Читал в интернете, что если часть текста на ином, чем указанный в <html lang="ru">, языке, то эту часть надо оборачивать в span
-             и указывать нужный для прочтения надписи язык. Как это сделать внутри aria-label я не знаю, поэтом добавил тэг p с классом visually-hidden -->
-            <p class="visually-hidden">Сайт компании
+            <p class="visually-hidden">
               <span lang="en">DJI</span>
             </p>
-            <img src="img/logo-DJI.png" width="260" height="100" alt="DJI" class="logotypes">
+            <img src="img/DJI-bw.png" width="260" height="100" alt="DJI" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <p class="visually-hidden">Сайт компании
+            <p class="visually-hidden">
               <span lang="en">SP-gadgets</span>
             </p>
-            <img src="img/logo-SP.png" width="260" height="100" alt="SP-gadgets" class="logotypes">
+            <img src="img/SP-bw.png" width="260" height="100" alt="SP-gadgets" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <p class="visually-hidden">Сайт компании
+            <p class="visually-hidden">
               <span lang="en">GoPro</span>
             </p>
-            <img src="img/logo-GoPro.png" width="260" height="100" alt="GoPro" class="logotypes">
+            <img src="img/GoPro-bw.png" width="260" height="100" alt="GoPro" class="logotypes">
           </a>
         </li>
         <li class="logotypes-item">
           <a href="#">
-            <p class="visually-hidden">Сайт компании
+            <p class="visually-hidden">
               <span lang="en">Vive</span>
             </p>
-            <img src="img/logo-Vive.png" width="260" height="100" alt="Vive" class="logotypes">
+            <img src="img/Vive-bw.png" width="260" height="100" alt="Vive" class="logotypes">
           </a>
         </li>
       </ul>
@@ -234,15 +233,14 @@
       <div class="about-us">
         <h3>О нас</h3>
         <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные
-          точки России! DEVICE работает со многими транспортными компаниями:
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
         </p>
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="btn-animated-1">Подробне о нас</a>
+        <a href="#" class="btn-2 btn-animated-1">Подробне о нас</a>
       </div>
       <div class="contacts">
         <h3>Контакты</h3>
@@ -250,43 +248,19 @@
         <a href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
           <img src="img/map.jpg" width="560" height="222" alt="Карта проезда. Ул. Строителей, 15">
         </a>
-        <a href="#" class="btn-animated-1">Напишите нам</a>
+        <a href="#" class="btn-2 btn-animated-1">Напишите нам</a>
       </div>
-    </section>
-
-    <section class="modal-map">
-      <h3 class="visually-hidden">Карта крупным планом</h3>
-      <!--Нужен ли aria-label при наличии alt? -->
-      <img src="img/map-big.jpg" width="960" height="559" alt="Карта крупным планом. Ул. Строителей, 15">
-    </section>
-
-    <section class="modal-write-us">
-      <h3 class="visually-hidden">Форма обратной связи</h3>
-      <form action="https://echo.htmlacademy.ru" name="modal-feedback">
-        <label for="feedback_name">Ваше имя
-          <input type="text" id="feedback_name" value="Имя Фамилия" required autocomplete="on">
-        </label>
-        <label for="feedback-email">Ваш e-mail
-          <input type="email" id="feedback-email" value="email@example.com" required autocomplete="on">
-        </label>
-        <label for="feedback-text">Текст письма
-          <input type="text" id="feedback-text" value="В свободной форме" required>
-        </label>
-        <input type="submit" value="Отправить">
-      </form>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="main-footer-top">
       <a class="main-footer-logo">
-        <img class="logo" src="img/logo-footer.png" width="160" height="35" alt="logo">
+        <img  class="logo btn-1" src="img/logo-footer.png" width="160" height="35" alt="logo">
       </a>
       <div class="footer-user-tools">
-        <div class="main-footer-login">
-          <a href="#" class="btn-small">Войти</a>
-        </div>
+        <a class="btn-small enter" href="#">Войти</a>
         <a class="btn-small compare" href="#">Сравнить</a>
         <a class="btn-small shopping-cart" href="#">Корзина</a>
       </div>
@@ -296,47 +270,68 @@
         <p>г.Москва, ул.Строителей, 15</p>
       </div>
       <nav class="footer-navigation">
-        <a class="btn-big" href="#delivery">Доставка</a>
-        <a class="btn-big" href="#guarantee">Гарантия</a>
-        <a class="btn-big" href="#contacts">Контакты</a>
+        <a class="btn-1" href="#delivery">Доставка</a>
+        <a class="btn-1" href="#guarantee">Гарантия</a>
+        <a class="btn-1" href="#contacts">Контакты</a>
       </nav>
       <div class="footer-phone">
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <div class="main-footer-bottom">
-        <div class="footer-social">
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Facebook</span>
-            </p>
-          </a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Instagram</span>
-            </p>
-          </a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Twitter</span>
-            </p>
-          </a>
-        </div>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <p class="visually-hidden">Переход на интенсивный курс
-              <b>"
-                <span lang="en">HTML</span> и
+    </div>
+    <div class="main-footer-bottom">
+      <div class="footer-social">
+        <h3 class="visually-hidden">Приходите на наши страницы на:</h3>
+        <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Facebook</span>
+          </p>
+        </a>
+        <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Instagram</span>
+          </p>
+        </a>
+        <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Twitter</span>
+          </p>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <a class="btn-1" href="https://htmlacademy.ru/intensive/htmlcss">
+          <p class="visually-hidden">Интенсивный курс
+            <b>"
+                <span lang="en">HTML</span>
+                и
                 <span lang="en">CSS</span>, уровень 1"</b> на сайте
-              <span lang="en">HTML Academy</span>
-            </p>
-          </a>
-        </div>
+            <span lang="en">HTML Academy</span>
+          </p>
+        </a>
       </div>
     </div>
+
   </footer>
+
+  <section class="modal-map">
+    <h3 class="visually-hidden">Карта крупным планом</h3>
+    <img src="img/map-big.jpg" width="960" height="559" alt="Карта крупным планом. Ул. Строителей, 15">
+  </section>
+
+  <section class="modal-write-us">
+    <h3 class="visually-hidden">Форма обратной связи</h3>
+    <form action="https://echo.htmlacademy.ru" name="modal-feedback">
+      <label for="feedback_name">Ваше имя
+        <input type="text" id="feedback_name" value="Имя Фамилия" required="required" autocomplete="on">
+      </label>
+      <label for="feedback-email">Ваш e-mail
+        <input type="email" id="feedback-email" value="email@example.com" required="required" autocomplete="on">
+      </label>
+      <label for="feedback-text">Текст письма
+        <input type="text" id="feedback-text" value="В свободной форме" required="required">
+      </label>
+      <input class="btn-big" type="submit" value="Отправить">
+    </form>
+  </section>
 </body>
 
 </html>

@@ -9,71 +9,75 @@
 </head>
 
 <body>
+
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img class="logo" src="img/logo.png" width="160" height="35" alt="Логотип компании Device">
-    </a>
-    <div class="main-header-user-tools">
-      <form>
-        <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
-        <input type="submit" value="Найти">
-      </form>
-      <div class="main-user-menu">
-        <div class="main-header-login">
-          <a href="/profile.html" class="btn-small">Валентин Петухов</a>
-          <a href="#">Выйти</a>
+    <div class="main-header-top">
+      <a class="main-header-logo">
+        <img class="logo btn-1" src="img/logo.png" width="160" height="35" alt="Логотип компании Device">
+      </a>
+    </div>
+    <div class="main-header-middle">
+      <div class="main-header-user-tools">
+        <form>
+          <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
+          <input type="submit" value="Найти">
+        </form>
+        <div class="main-user-menu">
+          <a class="btn-1 enter" href="#">Войти</a>
+          <a class="btn-1 compare" href="#">Сравнить</a>
+          <a class="btn-1 shopping-cart" href="#">Корзина</a>
         </div>
-        <a class="btn-small compare" href="#">Сравнить</a>
-        <a class="btn-small shopping-cart" href="#">Корзина</a>
       </div>
     </div>
-    <nav class="main-header-navigation" aria-label="Каталог товаров">
-      <ul class="main-header-menu-list">
-        <li>
-          <a class="btn-big sub-menu" href="#">Каталог товаров</a>
-          <ul>
-            <li>
-              <a href="catalog#vr">Виртуальная реальность</a>
-              <a href="catalog#monopods">Моноподы для селфи</a>
-              <a href="catalog#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="catalog#wristband">Фитнес-браслеты</a>
-              <a href="catalog#watches">Умные часы</a>
-            </li>
-            <li>
-              <a href="catalog#quadro">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="main-header-services">
-        <a class="btn-big" href="#delivery">Доставка</a>
-        <a class="btn-big" href="#guarantee">Гарантия</a>
-        <a class="btn-big" href="#contacts">Контакты</a>
-      </div>
+    <div class="main-header-bottom">
+      <nav class="main-header-navigation" aria-label="Каталог товаров">
+        <ul class="main-header-menu-list">
+          <li>
+            <a class="btn-1 sub-menu" href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li>
+                <a class="btn-1" href="catalog#vr">Виртуальная реальность</a>
+                <a class="btn-1" href="catalog#monopods">Моноподы для селфи</a>
+                <a class="btn-1" href="catalog#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a class="btn-1" href="catalog#wristband">Фитнес-браслеты</a>
+                <a class="btn-1" href="catalog#watches">Умные часы</a>
+              </li>
+              <li>
+                <a class="btn-1" href="catalog#quadro">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="main-header-services" aria-label="Наши сервисы">
+          <a class="btn-1" href="#delivery">Доставка</a>
+          <a class="btn-1" href="#guarantee">Гарантия</a>
+          <a class="btn-1" href="#contacts">Контакты</a>
+        </div>
+    </div>
     </nav>
   </header>
 
   <main>
+
     <section class="breadcrumbs">
       <h1>Моноподы для селфи</h1>
       <ul>
         <li>
-          <a href="index.html">Главная</a>
+          <a class="btn-4" href="index.html">Главная</a>
         </li>
         <li>
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="btn-4" href="catalog.html">Каталог товаров</a>
         </li>
         <li>
-          <a>Моноподы для селфи</a>
+          <a class="btn-4">Моноподы для селфи</a>
         </li>
       </ul>
     </section>
 
     <section class="filter">
       <h3>Фильтр:</h3>
-      <!-- В index я оборачивал Input в label, а тут связывал через id и for. является или это нарушением единообразия разметки (основной критерий)? -->
       <form action="https://echo.htmlacademy.ru" name="catalog-filter">
         <fieldset class="price-range">
           <legend>Стоимость</legend>
@@ -118,29 +122,28 @@
       <div class="sort">
         <h3>Сортировка</h3>
         <ul class="sort-list">
-          <li class="sort-item">
+          <li class="btn-5 sort-item">
             <a href="#">
               По цене
             </a>
           </li>
-          <li class="sort-item">
+          <li class="btn-5 sort-item">
             <a href="#">
               По типу
             </a>
           </li>
-          <li class="sort-item">
+          <li class="btn-5 sort-item">
             <a href="#">
               По популярности
             </a>
           </li>
         </ul>
         <div class="sort-order">
-          <a class="sort-order-increase" href="#">По возрастанию</a>
-          <a class="sort-order-decrease" href="#">По убыванию</a>
+          <a class="btn-5 sort-order-increase" href="#">По возрастанию</a>
+          <a class="btn-5 sort-order-decrease" href="#">По убыванию</a>
         </div>
       </div>
       <ul class="catalog-list">
-        <!-- У любого товара может быть метка «new». Как сделать? -->
         <li class="catalog-item">
           <img src="img/simple-selfy.png" width="360" height="380" alt="Любительская селфи-палка">
           <div class="catalog-description">
@@ -150,8 +153,8 @@
             <p class="price">500 руб.</p>
           </div>
           <div class="catalog-item-overlay">
-            <button class="btn btn-1">В корзину</button>
-            <button class="compare">Добавить к сравнению</button>
+            <button class="btn-2">В корзину</button>
+            <button class="btn-4">Добавить к сравнению</button>
           </div>
         </li>
         <li class="catalog-item">
@@ -164,8 +167,8 @@
               <p class="price">1500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <button class="btn-big">В корзину</button>
-              <button class="compare">Добавить к сравнению</button>
+              <button class="btn-2">В корзину</button>
+              <button class="btn-4">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -179,8 +182,8 @@
               <p class="price">2500 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <button class="btn-big">В корзину</button>
-              <button class="compare">Добавить к сравнению</button>
+              <button class="btn-2">В корзину</button>
+              <button class="btn-4">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -194,8 +197,8 @@
               <p class="price">4900 руб.</p>
             </div>
             <div class="catalog-item-overlay">
-              <button class="btn-big">В корзину</button>
-              <button class="compare">Добавить к сравнению</button>
+              <button class="btn-2">В корзину</button>
+              <button class="btn-4">Добавить к сравнению</button>
             </div>
           </div>
         </li>
@@ -203,26 +206,24 @@
       <div class="pagination">
         <a href="#" class="pagination-backward">Назад</a>
         <p class="pagination-numbers">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          <a class="btn-5" href="#">1</a>
+          <a class="btn-5" href="#">2</a>
+          <a class="btn-5" href="#">3</a>
         </p>
         <a href="#" class="pagination-forward">Вперед</a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="main-footer-top">
       <a class="main-footer-logo">
-        <img class="logo" src="img/logo-footer.png" width="160" height="35" alt="logo">
+        <img class="logo btn-1" src="img/logo-footer.png" width="160" height="35" alt="logo">
       </a>
       <div class="footer-user-tools">
-        <div class="main-footer-login">
-          <a href="#" class="btn-small">Войти</a>
-        </div>
-        <a class="btn-small compare" href="#">Сравнить</a>
-        <a class="btn-small shopping-cart" href="#">Корзина</a>
+        <a class="btn-4 enter" href="#">Войти</a>
+        <a class="btn-4 compare" href="#">Сравнить</a>
+        <a class="btn-4 shopping-cart" href="#">Корзина</a>
       </div>
     </div>
     <div class="main-footer-middle">
@@ -230,46 +231,46 @@
         <p>г.Москва, ул.Строителей, 15</p>
       </div>
       <nav class="footer-navigation">
-        <a class="btn-big" href="#delivery">Доставка</a>
-        <a class="btn-big" href="#guarantee">Гарантия</a>
-        <a class="btn-big" href="#contacts">Контакты</a>
+        <a class="btn-1" href="#delivery">Доставка</a>
+        <a class="btn-1" href="#guarantee">Гарантия</a>
+        <a class="btn-1" href="#contacts">Контакты</a>
       </nav>
       <div class="footer-phone">
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <div class="main-footer-bottom">
-        <div class="footer-social">
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Facebook</span>
-            </p>
-          </a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Instagram</span>
-            </p>
-          </a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
-            <p class="visually-hidden">Переход на страницу
-              <span lang="en">HTML Academy</span> на
-              <span lang="en">Twitter</span>
-            </p>
-          </a>
-        </div>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <p class="visually-hidden">Переход на интенсивный курс
-              <b>"
-                <span lang="en">HTML</span> и
+    </div>
+    <div class="main-footer-bottom">
+      <div class="footer-social">
+        <h3 class="visually-hidden">Приходите на наши страницы на:</h3>
+        <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Facebook</span>
+          </p>
+        </a>
+        <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Instagram</span>
+          </p>
+        </a>
+        <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+          <p class="visually-hidden">
+            <span lang="en">Twitter</span>
+          </p>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <a class="btn-1" href="https://htmlacademy.ru/intensive/htmlcss">
+          <p class="visually-hidden">Интенсивный курс
+            <b>"
+                <span lang="en">HTML</span>
+                и
                 <span lang="en">CSS</span>, уровень 1"</b> на сайте
-              <span lang="en">HTML Academy</span>
-            </p>
-          </a>
-        </div>
+            <span lang="en">HTML Academy</span>
+          </p>
+        </a>
       </div>
     </div>
+
   </footer>
 </body>
 
