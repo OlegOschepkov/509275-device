@@ -35,7 +35,7 @@
         <nav class="main-header-navigation">
           <ul class="main-header-menu-list" aria-label="Каталог товаров">
             <li>
-              <a class="btn-1 sub-menu" href="catalog.html">Каталог товаров</a>
+              <a class="btn-1 sub-menu" href="catalog.html"><span>Каталог товаров</span></a>
               <ul class="sub-menu-list">
                 <li class="adjuster">
                   <a class="btn-1" href="catalog#vr">Виртуальная реальность</a>
@@ -178,42 +178,43 @@
 
     <section class="services-section">
       <div class="container">
-        <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="services-radio-list">
-          <li class="services-radio-item">
-            <input type="radio" class="visually-hidden" id="services-btn-1" checked="checked">
-          </li>
-          <li class="services-radio-item">
-            <input type="radio" class="visually-hidden" id="services-btn-2">
-          </li>
-          <li class="services-radio-item">
-            <input type="radio" class="visually-hidden" id="services-btn-3">
-          </li>
-        </ul>
-        <div class="services-slider-control">
-          <label class="btn-3" for="services-btn-1">Доставка</label>
-          <label class="btn-3" for="services-btn-2">Гарантия</label>
-          <label class="btn-3" for="services-btn-3">Кредит</label>
+        <div class="services-offset">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul class="services-radio-list visually-hidden">
+            <li class="services-radio-item">
+              <input type="radio" id="services-btn-1" checked="checked">
+            </li>
+            <li class="services-radio-item">
+              <input type="radio" id="services-btn-2">
+            </li>
+            <li class="services-radio-item">
+              <input type="radio" id="services-btn-3">
+            </li>
+          </ul>
+          <div class="services-slider-control">
+            <label class="btn-3" for="services-btn-1">Доставка</label>
+            <label class="btn-3" for="services-btn-2">Гарантия</label>
+            <label class="btn-3" for="services-btn-3">Кредит</label>
+          </div>
+          <ul class="services-list">
+            <li class="services-item">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-item">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-item">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
         </div>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-item">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-item">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <section class="logotypes_section">
-
+    <section class="logotypes-section">
       <div class="container">
         <h2 class="visually-hidden">Сайты наших партнеров</h2>
         <ul class="logotypes-list">
