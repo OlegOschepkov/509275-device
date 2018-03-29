@@ -21,14 +21,16 @@
         </a>
       </div>
       <div class="main-header-middle">
-        <form>
-          <input type="search" id="header-search-field" value="Поиск по сайту" action="https://echo.htmlacademy.ru" autocomplete="on">
+        <form action="https://echo.htmlacademy.ru">
+          <input type="search" id="header-search-field" value="Поиск по сайту" autocomplete="off">
           <input type="submit" value="Найти">
         </form>
         <div class="main-user-menu container-right">
           <a class="btn-1 enter" href="#"><span>Войти</span></a>
-          <a class="btn-1 compare" href="#"><span>Сравнить</span></a>
-          <a class="btn-1 shopping-cart" href="#"><span>Корзина</span></a>
+          <div>
+            <a class="btn-1 compare" href="#"><span>Сравнить</span></a>
+            <a class="btn-1 shopping-cart" href="#"><span>Корзина</span></a>
+          </div>
         </div>
       </div>
       <div class="main-header-bottom">
@@ -39,7 +41,7 @@
               <ul class="sub-menu-list">
                 <li class="adjuster">
                   <a class="btn-1" href="catalog#vr">Виртуальная реальность</a>
-                  <a class="btn-1" href="catalog#monopods">Моноподы для селфи</a>
+                  <a class="btn-1" href="catalog.html">Моноподы для селфи</a>
                   <a class="btn-1" href="catalog#">Экшн-камеры</a>
                 </li>
                 <li class="adjuster">
@@ -59,22 +61,18 @@
           </div>
         </nav>
       </div>
+    </div>
 
 
-      <section class="top-slider">
-        <h2 class="visually-hidden">Главный слайдер</h2>
-        <div class="hot-items-slider">
-          <input type="radio" id="hot-items-btn-1" name="toggle" checked="checked">
-          <input type="radio" id="hot-items-btn-2" name="toggle">
-          <input type="radio" id="hot-items-btn-3" name="toggle">
-        </div>
-        <div class="hot-items-slider-controls">
-          <label for="hot-items-btn-1" aria-label="Первый слайд"></label>
-          <label for="hot-items-btn-2" aria-label="Второй слайд"></label>
-          <label for="hot-items-btn-3" aria-label="Третий слайд"></label>
-        </div>
+
+    <section class="top-slider">
+      <h2 class="visually-hidden">Главный слайдер</h2>
+      <input class="visually-hidden" type="radio" id="hot-items-btn-1" name="toggle" checked="checked">
+      <input class="visually-hidden" type="radio" id="hot-items-btn-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="hot-items-btn-3" name="toggle">
+      <div class="hot-items-slides-wrap">
         <div class="hot-items-slides">
-          <div class="slider-1">
+          <div class="slides slider-1">
             <img src="img/ben.png" width="384" height="486" alt="Огроменная, складная селфи-палка">
             <div class="slide-description container-right">
               <h3>Делай селфи,<br>как Бен Стиллер!</h3>
@@ -95,10 +93,10 @@
               </table>
             </div>
           </div>
-          <div class="slider-2">
+          <div class="slides slider-2">
             <img src="img/watches.png" width="345" height="485" alt="Стильный, но безжалостный, фитнес-браслет">
             <div class="slide-description">
-              <h3>Худеем правильно!</h3>
+              <h3>Худеем<br>правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="btn-2" href="#">Подробнее</a>
               <table>
@@ -111,8 +109,8 @@
               </table>
             </div>
           </div>
-          <div class="slider-3">
-            <img src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер с лазером!">
+          <div class="slides slider-3">
+            <img src="img/quadrocopter.png" width="536" height="334" alt="Квадрокоптер с лазером!">
             <div class="slide-description">
               <h3>
             Порхает как бабочка, жалит как пчела!</h3>
@@ -131,8 +129,15 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="hot-items-slider-controls">
+          <label for="hot-items-btn-1" aria-label="Первый слайд"></label>
+          <label for="hot-items-btn-2" aria-label="Второй слайд"></label>
+          <label for="hot-items-btn-3" aria-label="Третий слайд"></label>
+        </div>
+      </div>
+    </section>
+
+
   </header>
 
 
@@ -148,7 +153,7 @@
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-item-monopod" href="#">
+            <a class="popular-item-monopod" href="catalog.html">
               <span>Моноподы для селфи</span>
             </a>
           </li>
@@ -180,36 +185,30 @@
       <div class="container">
         <div class="services-offset">
           <h2 class="visually-hidden">Сервисы</h2>
-          <ul class="services-radio-list visually-hidden">
-            <li class="services-radio-item">
-              <input type="radio" id="services-btn-1" checked="checked">
-            </li>
-            <li class="services-radio-item">
-              <input type="radio" id="services-btn-2">
-            </li>
-            <li class="services-radio-item">
-              <input type="radio" id="services-btn-3">
-            </li>
-          </ul>
+          <input class="visually-hidden" type="radio" id="services-btn-1" name="toggle2" checked="checked">
+          <input class="visually-hidden" type="radio" id="services-btn-2" name="toggle2">
+          <input class="visually-hidden" type="radio" id="services-btn-3" name="toggle2">
           <div class="services-slider-control">
             <label class="btn-3" for="services-btn-1">Доставка</label>
             <label class="btn-3" for="services-btn-2">Гарантия</label>
             <label class="btn-3" for="services-btn-3">Кредит</label>
           </div>
-          <ul class="services-list">
-            <li class="services-item">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="services-item">
-              <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </li>
-            <li class="services-item">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </li>
-          </ul>
+          <div class="services-list-wrap">
+            <ul class="services-list">
+              <li class="services-item delivery">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </li>
+              <li class="services-item guarantee">
+                <h3>Гарантия</h3>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+              </li>
+              <li class="services-item credit">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -259,22 +258,25 @@
         <div class="about-us">
           <h3>О нас</h3>
           <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br><br> Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. <br>
+            <br> Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul>
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="btn-2 btn-animated-1">Подробне о нас</a>
+          <a href="#" class="btn-2 btn-animated-1 map-popup">Подробне о нас</a>
         </div>
         <div class="contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
-            <img src="img/map.jpg" width="560" height="222" alt="Карта проезда. Ул. Строителей, 15">
-          </a>
-          <a href="#" class="btn-2 btn-animated-1">Напишите нам</a>
+          <div>
+            <a href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
+              <img src="img/map.jpg" width="560" height="222" alt="Карта проезда. Ул. Строителей, 15">
+            </a>
+          </div>
+          <a href="#" class="btn-2 btn-animated-1 feedback-popup">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -289,9 +291,9 @@
             <img  class="logo btn-1" src="img/logo-footer.png" width="160" height="35" alt="logo">
           </a>
         <div class="footer-user-tools">
-          <a class="btn-small enter" href="#">Войти</a>
-          <a class="btn-small compare" href="#">Сравнить</a>
-          <a class="btn-small shopping-cart" href="#">Корзина</a>
+          <a class="btn-6 enter" href="#">Войти</a>
+          <a class="btn-6 compare" href="#">Сравнить</a>
+          <a class="btn-6 shopping-cart" href="#">Корзина</a>
         </div>
       </div>
       <div class="main-footer-middle">
@@ -310,18 +312,18 @@
       <div class="main-footer-bottom">
         <div class="footer-social">
           <h3 class="visually-hidden">Посетите на наши страницы на:</h3>
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+          <a class="social-btn social-btn-fb btn-4" href="https://facebook.com/htmlacademy">
               <span class="visually-hidden" lang="en">Facebook</span>
           </a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+          <a class="social-btn social-btn-in btn-4" href="https://instagram.com/htmlacademy">
               <span class="visually-hidden" lang="en">Instagram</span>
           </a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+          <a class="social-btn social-btn-tw btn-4" href="https://twitter.com/htmlacademy">
               <span class="visually-hidden" lang="en">Twitter</span>
           </a>
         </div>
         <div class="footer-copyright">
-          <a class="btn-1 copyright-btn" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="copyright-btn btn-1" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">Интенсивный курс
               <b>"
                   <span lang="en">HTML</span>
@@ -334,26 +336,61 @@
       </div>
     </footer>
   </div>
+  <!-- <script>
+    var link = document.querySelector(".feedback-popup");
+    var popup = document.querySelector(".modal-write-us");
+    var close = popup.querySelector(".modal-close");
+    var form = popup.querySelector("form");
+    var formName = popup.querySelector("[id=feedback-name]");
+    var formMail = popup.querySelector("[id=feedback-email]");
+    var formText = popup.querySelector("[id=feedback-text]");
 
-  <section class="modal-map">
+
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      formName.focus();
+    });
+
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+
+    form.addEventListener("submit", function(evt) {
+      if (!formName.value || !formMail.value || !formText.value) {
+        evt.preventDefault();
+        console.log("Пожалуйста заполните все поля");
+      } else {
+        localStorage.setItem("formName", formName);
+        localStorage.setItem("formMail", formMail);
+      }
+    });
+
+  </script> -->
+
+  <section class=" modal modal-map">
     <h3 class="visually-hidden">Карта крупным планом</h3>
-    <img src="img/map-big.jpg" width="960" height="559" alt="Карта крупным планом. Ул. Строителей, 15">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBe3u-smOD" width="960" height="559" frameborder="0"></iframe>
+    <!-- <img src="img/map-big.jpg" width="960" height="559" alt="Карта крупным планом. Ул. Строителей, 15"> -->
+    <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-  <section class="modal-write-us">
+  <section class="modal modal-write-us">
     <h3 class="visually-hidden">Форма обратной связи</h3>
-    <form action="https://echo.htmlacademy.ru" name="modal-feedback">
-      <label for="feedback_name">Ваше имя
-        <input type="text" id="feedback_name" value="Имя Фамилия" required="required" autocomplete="on">
+    <form class="modal-feedback" action="https://echo.htmlacademy.ru" name="modal-feedback">
+      <label for="feedback-name"><span>Ваше имя:</span>
+        <input class="form-feedback-name" type="text" id="feedback-name" value="Имя Фамилия" required="required" autocomplete="on">
       </label>
-      <label for="feedback-email">Ваш e-mail
-        <input type="email" id="feedback-email" value="email@example.com" required="required" autocomplete="on">
+      <label for="feedback-email"><span>Ваш e-mail:</span>
+        <input class="form-feedback-email" type="email" id="feedback-email" value="email@example.com" required="required" autocomplete="on">
       </label>
-      <label for="feedback-text">Текст письма
-        <input type="text" id="feedback-text" value="В свободной форме" required="required">
+      <label for="feedback-text"><span>Текст письма:</span>
+        <input class="form-feedback-text" type="text" id="feedback-text" value="В свободной форме" required="required">
       </label>
-      <input class="btn-big" type="submit" value="Отправить">
+      <input class="btn-2" type="submit" value="Отправить">
     </form>
+    <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 

@@ -63,6 +63,14 @@ p {
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
   -webkit-padding-start: 0px;
+  -moz-margin-before: 0px;
+  -moz-margin-after: 0px;
+  -moz-padding-start: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 0px;
+  -moz-padding: 0px;
+  -moz-margin: 0px;
 }
 
 table {

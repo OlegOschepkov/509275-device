@@ -13,7 +13,7 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header-top">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
       <img class="logo btn-1" src="img/logo.png" width="160" height="35" alt="Логотип компании Device">
     </a>
       </div>
@@ -23,16 +23,21 @@
           <input type="submit" value="Найти">
         </form>
         <div class="main-user-menu container-right">
-          <a class="btn-1 enter" href="#">Войти</a>
-          <a class="btn-1 compare" href="#">Сравнить</a>
-          <a class="btn-1 shopping-cart" href="#">Корзина</a>
+          <div>
+            <a class="btn-1 user" href="#">Валентин Петухов</a>
+            <a class="btn-1 exit" href="#">Выйти</a>
+          </div>
+          <div>
+            <a class="btn-1 compare" href="#">Сравнить</a>
+            <a class="btn-1 shopping-cart" href="#">Корзина</a>
+          </div>
         </div>
       </div>
       <div class="main-header-bottom">
         <nav class="main-header-navigation">
           <ul class="main-header-menu-list" aria-label="Каталог товаров">
             <li>
-              <a class="btn-1 sub-menu" href="catalog.html">Каталог товаров</a>
+              <a class="btn-1 sub-menu" href="catalog.html"><span>Каталог товаров</span></a>
               <ul class="sub-menu-list">
                 <li class="adjuster">
                   <a class="btn-1" href="catalog#vr">Виртуальная реальность</a>
@@ -88,11 +93,25 @@
         <div class="filter-form">
           <form action="https://echo.htmlacademy.ru" name="catalog-filter">
             <fieldset class="price-range">
-              <legend>Стоимость</legend>
-              <input type="range" min="0" max="10000" step="100" value="5000">
+              <legend class="visually-hidden">Стоимость</legend>
+              <p>Стоимость</p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="item-color">
-              <legend>Цвет</legend>
+              <legend class="visually-hidden">Цвет</legend>
+              <p>Цвет</p>
               <div>
                 <input type="checkbox" name="item-color" id="black" value="black">
                 <label for="black">Черный</label>
@@ -115,13 +134,14 @@
               </div>
             </fieldset>
             <fieldset class="bluetooth">
-              <legend>Bluetooth</legend>
+              <legend class="visually-hidden">Bluetooth</legend>
+              <p>Bluetooth</p>
               <input type="radio" name="bluetooth" id="BT-yes" value="BTyes">
               <label for="BT-yes">Есть</label>
               <input type="radio" name="bluetooth" id="BT-no" value="BTno">
               <label for="BT-no">Нет</label>
             </fieldset>
-            <input class="btn btn-1" type="submit" value="Показать">
+            <input class="btn btn-2" type="submit" value="Показать">
           </form>
         </div>
       </section>
@@ -131,27 +151,29 @@
         <h2 class="visually-hidden">Блок с товарами</h2>
         <div class="sort">
           <div class="sort-wrap">
-            <h3>Сортировка</h3>
-            <ul class="sort-list">
-              <li class="btn-5 sort-item">
-                <a href="#">
+            <h3>Сортировка:</h3>
+            <div class="sorting-wrap">
+              <ul class="sort-list">
+                <li class="btn-5 sort-item">
+                  <a href="#">
                 По цене
                 </a>
-              </li>
-              <li class="btn-5 sort-item">
-                <a href="#">
+                </li>
+                <li class="btn-5 sort-item">
+                  <a href="#">
                 По типу
                 </a>
-              </li>
-              <li class="btn-5 sort-item">
-                <a href="#">
+                </li>
+                <li class="btn-5 sort-item">
+                  <a href="#">
                 По популярности
                 </a>
-              </li>
-            </ul>
-            <div class="sort-order">
-              <a class="btn-5 sort-order-increase" href="#">По возрастанию</a>
-              <a class="btn-5 sort-order-decrease" href="#">По убыванию</a>
+                </li>
+              </ul>
+              <div class="sort-order">
+                <a class="btn-5 sort-order-increase" href="#"><span class="visually-hidden">По возрастанию</span></a>
+                <a class="btn-5 sort-order-decrease" href="#"><span class="visually-hidden">По убыванию</span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -162,55 +184,58 @@
               <img src="img/simple-selfy.png" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-description">
                 <h3 class="description">
-              <a href="#">Любительская селфи-палка</a>
-            </h3>
+                  <a href="#">Любительская селфи-палка</a>
+                </h3>
                 <p class="price">500 руб.</p>
               </div>
               <div class="catalog-item-overlay">
-                <button class="btn-2">В корзину</button>
-                <button class="btn-4">Добавить к сравнению</button>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <div>
-                <img src="img/pro-selfy.png" width="360" height="380" alt="Профессиональная селфи-палка">
-                <div class="catalog-description">
-                  <h3 class="description">
-                <a href="#">Профессиональная селфи-палка</a>
-              </h3>
-                  <p class="price">1500 руб.</p>
-                </div>
-                <div class="catalog-item-overlay">
+                <div>
                   <button class="btn-2">В корзину</button>
                   <button class="btn-4">Добавить к сравнению</button>
                 </div>
               </div>
             </li>
             <li class="catalog-item">
-              <div>
-                <img src="img/water-selfy.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <div class="catalog-description">
-                  <h3 class="description">
-                <a href="#">Непотопляемая селфи-палка</a>
-              </h3>
-                  <p class="price">2500 руб.</p>
-                </div>
-                <div class="catalog-item-overlay">
+              <img src="img/pro-selfy.png" width="360" height="380" alt="Профессиональная селфи-палка">
+              <div class="catalog-description">
+                <h3 class="description">
+                    <a href="#">Профессиональная селфи-палка</a>
+                  </h3>
+                <p class="price">1 500 руб.</p>
+              </div>
+              <div class="catalog-item-overlay">
+                <div>
                   <button class="btn-2">В корзину</button>
                   <button class="btn-4">Добавить к сравнению</button>
                 </div>
               </div>
             </li>
             <li class="catalog-item">
-              <div>
-                <img src="img/followme-selfy.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
-                <div class="catalog-description">
-                  <h3 class="description">
-                <a href="#">Селфи-палка "Следуй за мной"</a>
-              </h3>
-                  <p class="price">4900 руб.</p>
+              <img src="img/water-selfy.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <div class="catalog-description">
+                <h3 class="description">
+                    <a href="#">Непотопляемая селфи-палка</a>
+                  </h3>
+                <p class="price">2 500 руб.</p>
+              </div>
+              <div class="catalog-item-overlay">
+                <div>
+                  <button class="btn-2">В корзину</button>
+                  <button class="btn-4">Добавить к сравнению</button>
                 </div>
-                <div class="catalog-item-overlay">
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="new-flag"><span>new</span></div>
+              <img src="img/followme-selfy.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
+              <div class="catalog-description">
+                <h3 class="description">
+                    <a href="#">Селфи-палка "Следуй за мной"</a>
+                  </h3>
+                <p class="price">4 900 руб.</p>
+              </div>
+              <div class="catalog-item-overlay">
+                <div>
                   <button class="btn-2">В корзину</button>
                   <button class="btn-4">Добавить к сравнению</button>
                 </div>
@@ -231,7 +256,7 @@
           </div>
         </div>
       </section>
-
+    </div>
   </main>
 
   <div class="container-stretch gray">
@@ -242,9 +267,12 @@
             <img  class="logo btn-1" src="img/logo-footer.png" width="160" height="35" alt="logo">
           </a>
         <div class="footer-user-tools">
-          <a class="btn-small enter" href="#">Войти</a>
-          <a class="btn-small compare" href="#">Сравнить</a>
-          <a class="btn-small shopping-cart" href="#">Корзина</a>
+          <div>
+            <a class="btn-1 user" href="#">Валентин Петухов</a>
+            <a class="btn-1 exit" href="#">Выйти</a>
+          </div>
+          <a class="btn-6 compare" href="#">Сравнить</a>
+          <a class="btn-6 shopping-cart" href="#">Корзина</a>
         </div>
       </div>
       <div class="main-footer-middle">
@@ -263,13 +291,13 @@
       <div class="main-footer-bottom">
         <div class="footer-social">
           <h3 class="visually-hidden">Посетите на наши страницы на:</h3>
-          <a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">
+          <a class="social-btn social-btn-fb btn-4" href="https://facebook.com/htmlacademy">
               <span class="visually-hidden" lang="en">Facebook</span>
           </a>
-          <a class="social-btn social-btn-in" href="https://instagram.com/htmlacademy">
+          <a class="social-btn social-btn-in btn-4" href="https://instagram.com/htmlacademy">
               <span class="visually-hidden" lang="en">Instagram</span>
           </a>
-          <a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy">
+          <a class="social-btn social-btn-tw btn-4" href="https://twitter.com/htmlacademy">
               <span class="visually-hidden" lang="en">Twitter</span>
           </a>
         </div>
