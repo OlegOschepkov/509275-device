@@ -22,7 +22,7 @@
       </div>
       <div class="main-header-middle">
         <form action="https://echo.htmlacademy.ru">
-          <input type="search" id="header-search-field" value="Поиск по сайту" autocomplete="off">
+          <input type="text" id="header-search-field" value="Поиск по сайту">
           <input type="submit" value="Найти">
         </form>
         <div class="main-user-menu container-right">
@@ -283,9 +283,9 @@
   </main>
 
 
-  <div class="container-stretch gray">
 
-    <footer class="main-footer">
+  <footer class="main-footer">
+    <div class="container">
       <div class="main-footer-top">
         <a class="main-footer-logo">
             <img  class="logo btn-1" src="img/logo-footer.png" width="160" height="35" alt="logo">
@@ -334,40 +334,9 @@
           </a>
         </div>
       </div>
-    </footer>
-  </div>
-  <!-- <script>
-    var link = document.querySelector(".feedback-popup");
-    var popup = document.querySelector(".modal-write-us");
-    var close = popup.querySelector(".modal-close");
-    var form = popup.querySelector("form");
-    var formName = popup.querySelector("[id=feedback-name]");
-    var formMail = popup.querySelector("[id=feedback-email]");
-    var formText = popup.querySelector("[id=feedback-text]");
+    </div>
+  </footer>
 
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      formName.focus();
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-
-    form.addEventListener("submit", function(evt) {
-      if (!formName.value || !formMail.value || !formText.value) {
-        evt.preventDefault();
-        console.log("Пожалуйста заполните все поля");
-      } else {
-        localStorage.setItem("formName", formName);
-        localStorage.setItem("formMail", formMail);
-      }
-    });
-
-  </script> -->
 
   <section class=" modal modal-map">
     <h3 class="visually-hidden">Карта крупным планом</h3>
