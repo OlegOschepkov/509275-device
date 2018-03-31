@@ -393,7 +393,7 @@
     form.addEventListener("submit", function(evt) {
       if (!name.value || !mail.value || !text.value) {
         evt.preventDefault();
-        writeus.classList.remove("modal-error");
+        writeus.classList.remove("modal-shake");
         writeus.offsetWidth = writeus.offsetWidth;
         writeus.classList.add("modal-shake");
       };

@@ -1276,9 +1276,10 @@ main a,
   width: 960px;
   min-height: 555px;
   position: fixed;
-  top: 250px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  margin-left: -480px;
+  margin-top: -280px;
   background-color: #ffffff;
   z-index: 11;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -2003,16 +2004,20 @@ main a,
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: scale(0);
+    opacity: 0;
   }
   70% {
-    transform: translateY(30px);
+    transform: scale(1.1);
+    opacity: 1;
   }
   90% {
-    transform: translateY(-10px);
+    transform: scale(0.8);
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
