@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize-mini.css">
+  <link rel="stylesheet" href="css/styles-mini.css">
 </head>
 
 <body>
@@ -265,13 +265,13 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="btn-2 btn-animated-1 map-popup">Подробнее о нас</a>
+          <a href="#" class="btn-2 btn-animated-1">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <div>
-            <a href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
+            <a class="map-popup" href="https://www.google.ru/maps" aria-label="Переход на сервис карт гугл">
               <img src="img/map.jpg" width="560" height="222" alt="Карта проезда. Ул. Строителей, 15">
             </a>
           </div>
@@ -346,73 +346,19 @@
     <h3 class="visually-hidden">Форма обратной связи</h3>
     <form class="modal-feedback" action="https://echo.htmlacademy.ru" name="modal-feedback">
       <label for="feedback-name"><span>Ваше имя:</span>
-        <input class="form-feedback-name" type="text" id="feedback-name" placeholder="Имя Фамилия">
+        <input class="form-feedback-name" type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия" required="required">
       </label>
       <label for="feedback-email"><span>Ваш e-mail:</span>
-        <input class="form-feedback-email" type="email" id="feedback-email" placeholder="email@example.com">
+        <input class="form-feedback-email" type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com" required="required">
       </label>
       <label for="feedback-text"><span>Текст письма:</span>
-        <textarea class="form-feedback-text" cols="84" rows="8" id="feedback-text" required="required">В свободной форме</textarea>
+        <textarea class="form-feedback-text" cols="84" rows="8" id="feedback-text" name="feedback-text" required="required">В свободной форме</textarea>
       </label>
       <input class="btn-2" type="submit" value="Отправить">
     </form>
     <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
-  <script>
-    var link = document.querySelector(".map-popup");
-    var popup = document.querySelector(".modal-map");
-    var close = popup.querySelector(".modal-close");
-
-    var feedback = document.querySelector(".feedback-popup");
-    var writeus = document.querySelector(".modal-write-us");
-    var form = writeus.querySelector("form");
-    var name = writeus.querySelector("[id=feedback-name]");
-    var mail = writeus.querySelector("[id=feedback-email]");
-    var text = writeus.querySelector("[id=feedback-text]");
-    var closefeedback = writeus.querySelector(".modal-close");
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      name.focus();
-    });
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-
-    feedback.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      writeus.classList.add("modal-show");
-    });
-    closefeedback.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      writeus.classList.remove("modal-show");
-      writeus.classList.remove("modal-shake");
-    });
-    form.addEventListener("submit", function(evt) {
-      if (!name.value || !mail.value || !text.value) {
-        evt.preventDefault();
-        writeus.classList.remove("modal-shake");
-        writeus.offsetWidth = writeus.offsetWidth;
-        writeus.classList.add("modal-shake");
-      };
-    });
-
-    window.addEventListener("keydown", function(evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (writeus.classList.contains("modal-show")) {
-          writeus.classList.remove("modal-show");
-          writeus.classList.remove("modal-show");
-        }
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show")
-        }
-      }
-    });
-
-  </script>
+  <script src="js/popup-mini.js"></script>
 </body>
 
 </html>
