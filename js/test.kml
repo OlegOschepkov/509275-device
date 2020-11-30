@@ -46,7 +46,6 @@
   <Point>
     <coordinates>103.994433,1.350189,22</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -81,7 +80,6 @@
   <Point>
     <coordinates>100.60675,13.912583,9</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -116,7 +114,6 @@
   <Point>
     <coordinates>106.655897,-6.125567,34</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -151,7 +148,6 @@
   <Point>
     <coordinates>101.709917,2.745578,69</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -186,7 +182,6 @@
   <Point>
     <coordinates>24.963333,60.317222,179</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -221,7 +216,6 @@
   <Point>
     <coordinates>24.963333,60.337222,179</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -256,7 +250,6 @@
   <Point>
     <coordinates>24.963333,60.327222,179</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -291,7 +284,6 @@
   <Point>
     <coordinates>77.103088,28.5665,777</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 
 <Placemark>
@@ -327,7 +319,6 @@
   <Point>
     <coordinates>7.263892,49.948672,1649</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
   <name></name>
@@ -362,7 +353,6 @@
   <Point>
     <coordinates>23.604392,61.414147,390</coordinates>
   </Point>
-  <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
   </Document>
 </kml>
