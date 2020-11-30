@@ -49,7 +49,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>DMK</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -84,7 +84,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>CGK</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -119,7 +119,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>KUL</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -154,7 +154,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>HEL</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -189,7 +189,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>HEL</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -224,7 +224,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>HEL</name>
+  <name></name>
   <description>
     <![CDATA[
 <div class="map-popup">
@@ -259,7 +259,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>DEL</name>
+  <name></name>
   <description>
     <![CDATA[
 <b>Delhi-Indira Gandhi Intl (DEL), India</b><br><i>Elevation</i>: 777 ft<br><i>Flights</i>: 20
@@ -272,7 +272,7 @@
 </Placemark>
 
 <Placemark>
-  <name>HHN</name>
+  <name></name>
   <description>
     <![CDATA[
 <b>Hahn-Frankfurt Hahn (HHN), Germany</b><br><i>Elevation</i>: 1649 ft<br><i>Flights</i>: 1
@@ -284,7 +284,7 @@
   <styleUrl>#blue-pushpin</styleUrl>
 </Placemark>
 <Placemark>
-  <name>TMP</name>
+  <name></name>
   <description>
     <![CDATA[
 <b>Tampere Pirkkala (TMP), Finland</b><br><i>Elevation</i>: 390 ft<br><i>Flights</i>: 1
