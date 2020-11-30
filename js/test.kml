@@ -24,7 +24,7 @@
                 <description>01Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также<description/>
                 <atom:link rel="some-site01"/>
                 <Style>
-                    <IconStyle><Icon><href>img/pin.png</href></Icon><hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels"/></IconStyle>
+                    <IconStyle><Icon><href>https://olegoschepkov.github.io/509275-device/img/pin.svg</href></Icon><hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels"/></IconStyle>
                 </Style>
                 <Point>
                     <coordinates>55.831903, 37.411961</coordinates>
