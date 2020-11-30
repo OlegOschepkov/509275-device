@@ -1,2 +1,1510 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Style id="id1479670621351256661"><LineStyle><color>e61ed2ff</color><width>5</width></LineStyle></Style><Style id="id1479670805521994450"><LineStyle><color>4d4345ed</color><width>25</width></LineStyle></Style><Style id="id1479670607472502170"><LineStyle><color>e679470e</color><width>5</width></LineStyle></Style><Style id="id1479670665981467627"><LineStyle><color>e603ad1b</color><width>5</width></LineStyle><PolyStyle><color>00595959</color><fill>1</fill><outline>1</outline></PolyStyle></Style><Style id="id1479670660383732903"><LineStyle><color>00b3b3b3</color><width>5</width></LineStyle><PolyStyle><color>99c97b17</color><fill>1</fill><outline>1</outline></PolyStyle></Style><Folder><name>паыпывапываы</name><description><description/><Placemark><name><![CDATA[<b>Ivalo (IVL), Finland</b><br><i>Elevation</i>: 481 ft<br><i>Flights</i>: 2]]></name><description><![CDATA[<b>descr</b><br><i>Elevation</i>: 481 ft<br><i>Flights</i>: 2]]><description/><Style><IconStyle><Icon><href>https://olegoschepkov.github.io/509275-device/img/pin.svg</href></Icon><hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels"/></IconStyle></Style><Point><coordinates>29.702651,59.994675</coordinates></Point></Placemark><Placemark><name>Метка 1</name><description/><Style><IconStyle><Icon><href>http://api-maps.yandex.ru/i/0.4/micro/pmnts.png</href></Icon><hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels"/></IconStyle></Style><Point><coordinates>29.703743914062052,60.02605913928453</coordinates></Point></Placemark><Placemark><name>Метка 2</name><description/><Style><IconStyle><Icon><href>http://api-maps.yandex.ru/i/0.4/micro/pmvvs.png</href></Icon><hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels"/></IconStyle></Style><Point><coordinates>29.70366844335898,60.00960015860555</coordinates></Point></Placemark><Placemark><name>Линия 3</name><description/><styleUrl>#id1479670621351256661</styleUrl><LineString><coordinates>29.68578521679677,60.04310957752108 29.8141879267577,60.04379647322176</coordinates></LineString></Placemark><Placemark><name>Линия 2</name><description/><styleUrl>#id1479670805521994450</styleUrl><LineString><coordinates>29.68441192578115,60.05512818264542 29.81350128124989,60.0554715068608</coordinates></LineString></Placemark><Placemark><name>Линия 1</name><description/><styleUrl>#id1479670607472502170</styleUrl><LineString><coordinates>29.68441192578115,60.066799195951944 29.814874572265513,60.066799195951944</coordinates></LineString></Placemark><Placemark><name>Многоугольник 1</name><description/><styleUrl>#id1479670665981467627</styleUrl><Polygon><outerBoundaryIs><LinearRing><coordinates>29.72767059277334,60.03761389576303 29.814874572265513,60.03830090616017 29.805948180663965,59.98501508212242 29.72767059277334,60.03761389576303</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark><Placemark><name>Многоугольник 2</name><description/><styleUrl>#id1479670660383732903</styleUrl><Polygon><outerBoundaryIs><LinearRing><coordinates>29.794275207031145,59.984326959921916 29.716684264648332,59.98535913782649 29.721490783203013,60.0328044214997 29.794275207031145,59.984326959921916</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark></Folder></Document></kml>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Test KML</name>
+    <description>test KML</description>
+    <Style id="blue-pushpin">
+      <IconStyle>
+        <Icon>
+          <href>https://olegoschepkov.github.io/509275-device/img/pin.svg</href>
+        </Icon>
+	<scale>0.9</scale>
+        <colorMode>normal</colorMode>
+        <color>FF00FFFF</color>
+      </IconStyle>
+    </Style>
+<Placemark>
+  <name></name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>103.994433,1.350189,22</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DMK</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>Рыбным1 текстом назы1вается текст, служащий 1для временного наполн1ения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>100.60675,13.912583,9</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CGK</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>2Рыбным текс2том называется текст, служащий для временного наполнения м2акета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>106.655897,-6.125567,34</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KUL</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>3Рыбным текстом называется3 текст, служащий для врем3енного наполне3ния макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>101.709917,2.745578,69</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HEL</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>Рыбн4ым текстом4 называ4ет4ся тек4ст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>24.963333,60.317222,179</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HEL</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>Рыбн4ым текстом4 называ4ет4ся тек4ст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>24.963333,60.337222,179</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HEL</name>
+  <description>
+    <![CDATA[
+<div class="map-popup">
+<div class="map-popup__top-wrapper">
+<p>Рыбн4ым текстом4 называ4ет4ся тек4ст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также</p>
+</div>
+<div class="map-popup__bottom-wrapper">
+<p class="map-popup__likes"><span>654</span>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1.45833 20H3.54167C4.34583 20 5 19.3458 5 18.5417V18.2367C6.26 18.8783 9.12167 20 13.7758 20H15.1092C17.0408 20 18.6808 18.6183 19.0083 16.715L19.9417 11.2983C20.14 10.1425 19.8208 8.9675 19.0675 8.0725C18.315 7.17917 17.2117 6.66667 16.0425 6.66667H12.2625C12.4983 6.03333 12.7342 5.11 12.7342 3.95833C12.7342 0.8275 10.9625 0 10.0258 0C8.29583 0 8.15083 1.61333 8.15083 3.125C8.15083 4.97 6.08167 6.50333 4.98917 7.185C4.93333 6.43167 4.30917 5.83333 3.54167 5.83333H1.45833C0.654167 5.83333 0 6.4875 0 7.29167V18.5417C0 19.3458 0.654167 20 1.45833 20ZM9.40084 3.125C9.40084 1.25 9.71833 1.25 10.0258 1.25C10.6125 1.25 11.4842 1.97167 11.4842 3.95833C11.4842 5.805 10.7608 6.93667 10.7558 6.945C10.6283 7.13667 10.6158 7.38333 10.725 7.58667C10.8333 7.79 11.0458 7.91667 11.2758 7.91667H16.0425C16.8425 7.91667 17.5967 8.26667 18.1117 8.8775C18.6275 9.48917 18.8458 10.2942 18.71 11.085L17.7767 16.5017C17.5525 17.8033 16.4308 18.7492 15.1092 18.7492H13.7758C8.10667 18.75 5.26667 16.9767 5 16.8008V8.62583C5.69417 8.2575 9.40084 6.14917 9.40084 3.125ZM1.25 7.29167C1.25 7.17667 1.34333 7.08333 1.45833 7.08333H3.54167C3.65667 7.08333 3.75 7.17667 3.75 7.29167V18.5417C3.75 18.655 3.655 18.75 3.54167 18.75H1.45833C1.34333 18.75 1.25 18.6567 1.25 18.5417V7.29167Z" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</p>
+<a href="#somesite" class="map-popup__details-btn"><span>Подробнее</span>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.9833L8.97297 8L4 3.01667L5.51351 1.5L12 8L5.51351 14.5L4 12.9833Z"/>
+</svg>
+</a>
+</div>
+</div>
+]]>
+  </description>
+  <Point>
+    <coordinates>24.963333,60.327222,179</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DEL</name>
+  <description>
+    <![CDATA[
+<b>Delhi-Indira Gandhi Intl (DEL), India</b><br><i>Elevation</i>: 777 ft<br><i>Flights</i>: 20
+]]>
+  </description>
+  <Point>
+    <coordinates>77.103088,28.5665,777</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DXB</name>
+  <description>
+    <![CDATA[
+<b>Dubai Intl (DXB), United Arab Emirates</b><br><i>Elevation</i>: 62 ft<br><i>Flights</i>: 19
+]]>
+  </description>
+  <Point>
+    <coordinates>55.364444,25.252778,62</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>FRA</name>
+  <description>
+    <![CDATA[
+<b>Frankfurt Main (FRA), Germany</b><br><i>Elevation</i>: 364 ft<br><i>Flights</i>: 19
+]]>
+  </description>
+  <Point>
+    <coordinates>8.543125,50.026421,364</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>RUH</name>
+  <description>
+    <![CDATA[
+<b>Riyadh-King Khaled Intl (RUH), Saudi Arabia</b><br><i>Elevation</i>: 2049 ft<br><i>Flights</i>: 13
+]]>
+  </description>
+  <Point>
+    <coordinates>46.698776,24.95764,2049</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TLV</name>
+  <description>
+    <![CDATA[
+<b>Tel-aviv-Ben Gurion (TLV), Israel</b><br><i>Elevation</i>: 135 ft<br><i>Flights</i>: 13
+]]>
+  </description>
+  <Point>
+    <coordinates>34.886667,32.011389,135</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ICN</name>
+  <description>
+    <![CDATA[
+<b>Seoul-Incheon Intl (ICN), South Korea</b><br><i>Elevation</i>: 23 ft<br><i>Flights</i>: 11
+]]>
+  </description>
+  <Point>
+    <coordinates>126.450517,37.469075,23</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>BKK</name>
+  <description>
+    <![CDATA[
+<b>Bangkok-Suvarnabhumi Intl (BKK), Thailand</b><br><i>Elevation</i>: 5 ft<br><i>Flights</i>: 10
+]]>
+  </description>
+  <Point>
+    <coordinates>100.747283,13.681108,5</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CPH</name>
+  <description>
+    <![CDATA[
+<b>Copenhagen-Kastrup (CPH), Denmark</b><br><i>Elevation</i>: 17 ft<br><i>Flights</i>: 10
+]]>
+  </description>
+  <Point>
+    <coordinates>12.655972,55.617917,17</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>IST</name>
+  <description>
+    <![CDATA[
+<b>Istanbul-Ataturk (IST), Turkey</b><br><i>Elevation</i>: 163 ft<br><i>Flights</i>: 8
+]]>
+  </description>
+  <Point>
+    <coordinates>28.814606,40.976922,163</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>MUC</name>
+  <description>
+    <![CDATA[
+<b>Munich-Munchen (MUC), Germany</b><br><i>Elevation</i>: 1487 ft<br><i>Flights</i>: 8
+]]>
+  </description>
+  <Point>
+    <coordinates>11.786086,48.353783,1487</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>NRT</name>
+  <description>
+    <![CDATA[
+<b>Tokyo-Narita Intl (NRT), Japan</b><br><i>Elevation</i>: 141 ft<br><i>Flights</i>: 7
+]]>
+  </description>
+  <Point>
+    <coordinates>140.386389,35.764722,141</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LHR</name>
+  <description>
+    <![CDATA[
+<b>London-Heathrow (LHR), United Kingdom</b><br><i>Elevation</i>: 83 ft<br><i>Flights</i>: 7
+]]>
+  </description>
+  <Point>
+    <coordinates>-0.461389,51.4775,83</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ARN</name>
+  <description>
+    <![CDATA[
+<b>Stockholm-Arlanda (ARN), Sweden</b><br><i>Elevation</i>: 137 ft<br><i>Flights</i>: 6
+]]>
+  </description>
+  <Point>
+    <coordinates>17.918611,59.651944,137</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DPS</name>
+  <description>
+    <![CDATA[
+<b>Denpasar-Bali Ngurah Rai (DPS), Indonesia</b><br><i>Elevation</i>: 14 ft<br><i>Flights</i>: 6
+]]>
+  </description>
+  <Point>
+    <coordinates>115.167172,-8.748169,14</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>VIE</name>
+  <description>
+    <![CDATA[
+<b>Vienna-Schwechat (VIE), Austria</b><br><i>Elevation</i>: 600 ft<br><i>Flights</i>: 6
+]]>
+  </description>
+  <Point>
+    <coordinates>16.569722,48.110278,600</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>YOW</name>
+  <description>
+    <![CDATA[
+<b>Ottawa Macdonald Cartier Intl (YOW), Canada</b><br><i>Elevation</i>: 374 ft<br><i>Flights</i>: 5
+]]>
+  </description>
+  <Point>
+    <coordinates>-75.669167,45.3225,374</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>AUH</name>
+  <description>
+    <![CDATA[
+<b>Abu Dhabi Intl (AUH), United Arab Emirates</b><br><i>Elevation</i>: 88 ft<br><i>Flights</i>: 5
+]]>
+  </description>
+  <Point>
+    <coordinates>54.651138,24.432972,88</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>STN</name>
+  <description>
+    <![CDATA[
+<b>London-Stansted (STN), United Kingdom</b><br><i>Elevation</i>: 348 ft<br><i>Flights</i>: 5
+]]>
+  </description>
+  <Point>
+    <coordinates>0.235,51.885,348</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>JHB</name>
+  <description>
+    <![CDATA[
+<b>Johor Bahru-Sultan Ismail (JHB), Malaysia</b><br><i>Elevation</i>: 135 ft<br><i>Flights</i>: 5
+]]>
+  </description>
+  <Point>
+    <coordinates>103.669619,1.641308,135</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DOH</name>
+  <description>
+    <![CDATA[
+<b>Doha Intl (DOH), Qatar</b><br><i>Elevation</i>: 35 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>51.565056,25.261125,35</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>YYZ</name>
+  <description>
+    <![CDATA[
+<b>Toronto-Lester B Pearson Intl (YYZ), Canada</b><br><i>Elevation</i>: 569 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>-79.630556,43.677223,569</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CDG</name>
+  <description>
+    <![CDATA[
+<b>Paris-Charles De Gaulle (CDG), France</b><br><i>Elevation</i>: 392 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>2.55,49.012779,392</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CNX</name>
+  <description>
+    <![CDATA[
+<b>Chiang Mai Intl (CNX), Thailand</b><br><i>Elevation</i>: 1036 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>98.962644,18.766847,1036</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>AMI</name>
+  <description>
+    <![CDATA[
+<b>Mataram-Selaparang (AMI), Indonesia</b><br><i>Elevation</i>: 52 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>116.094656,-8.560708,52</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HKG</name>
+  <description>
+    <![CDATA[
+<b>Hong Kong Intl (HKG), Hong Kong</b><br><i>Elevation</i>: 28 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>113.914603,22.308919,28</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ISG</name>
+  <description>
+    <![CDATA[
+<b>Ishigaki (ISG), Japan</b><br><i>Elevation</i>: 93 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>124.186983,24.344525,93</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>OSL</name>
+  <description>
+    <![CDATA[
+<b>Oslo-Gardermoen (OSL), Norway</b><br><i>Elevation</i>: 681 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>11.100361,60.193917,681</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>JNB</name>
+  <description>
+    <![CDATA[
+<b>Johannesburg Intl (JNB), South Africa</b><br><i>Elevation</i>: 5558 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>28.246,-26.139166,5558</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>MAA</name>
+  <description>
+    <![CDATA[
+<b>Madras-Chennai Intl (MAA), India</b><br><i>Elevation</i>: 52 ft<br><i>Flights</i>: 4
+]]>
+  </description>
+  <Point>
+    <coordinates>80.180517,12.994414,52</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CAI</name>
+  <description>
+    <![CDATA[
+<b>Cairo Intl (CAI), Egypt</b><br><i>Elevation</i>: 382 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>31.405556,30.121944,382</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HND</name>
+  <description>
+    <![CDATA[
+<b>Tokyo Intl (HND), Japan</b><br><i>Elevation</i>: 35 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>139.779694,35.552258,35</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>YUL</name>
+  <description>
+    <![CDATA[
+<b>Montreal-Pierre Elliott Trudeau I. (YUL), Canada</b><br><i>Elevation</i>: 118 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>-73.740833,45.470556,118</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>REP</name>
+  <description>
+    <![CDATA[
+<b>Siem Reap (REP), Cambodia</b><br><i>Elevation</i>: 60 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>103.81284,13.410666,60</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>XSP</name>
+  <description>
+    <![CDATA[
+<b>Singapore-Seletar (XSP), Singapore</b><br><i>Elevation</i>: 36 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>103.867653,1.41695,36</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>BUD</name>
+  <description>
+    <![CDATA[
+<b>Budapest-Ferihegy (BUD), Hungary</b><br><i>Elevation</i>: 495 ft<br><i>Flights</i>: 3
+]]>
+  </description>
+  <Point>
+    <coordinates>19.255592,47.436933,495</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DUB</name>
+  <description>
+    <![CDATA[
+<b>Dublin (DUB), Ireland</b><br><i>Elevation</i>: 242 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-6.270075,53.421333,242</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KWI</name>
+  <description>
+    <![CDATA[
+<b>Kuwait Intl (KWI), Kuwait</b><br><i>Elevation</i>: 206 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>47.968928,29.226567,206</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>FUK</name>
+  <description>
+    <![CDATA[
+<b>Fukuoka (FUK), Japan</b><br><i>Elevation</i>: 32 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>130.450686,33.585942,32</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SFO</name>
+  <description>
+    <![CDATA[
+<b>San Francisco Intl (SFO), United States</b><br><i>Elevation</i>: 13 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-122.374889,37.618972,13</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>IAD</name>
+  <description>
+    <![CDATA[
+<b>Washington Dulles Intl (IAD), United States</b><br><i>Elevation</i>: 313 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-77.455811,38.944533,313</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SJU</name>
+  <description>
+    <![CDATA[
+<b>San Juan-Luis Munoz Marin In. (SJU), Puerto Rico</b><br><i>Elevation</i>: 9 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-66.001833,18.439417,9</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CLT</name>
+  <description>
+    <![CDATA[
+<b>Charlotte Douglas Intl (CLT), United States</b><br><i>Elevation</i>: 748 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-80.943139,35.214,748</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>NAS</name>
+  <description>
+    <![CDATA[
+<b>Nassau-Lynden Pindling Intl (NAS), Bahamas</b><br><i>Elevation</i>: 16 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-77.466231,25.038958,16</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>BCN</name>
+  <description>
+    <![CDATA[
+<b>Barcelona (BCN), Spain</b><br><i>Elevation</i>: 12 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>2.078464,41.297078,12</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KBV</name>
+  <description>
+    <![CDATA[
+<b>Krabi (KBV), Thailand</b><br><i>Elevation</i>: 93 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>98.988764,8.095969,93</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>MDC</name>
+  <description>
+    <![CDATA[
+<b>Manado-Sam Ratulangi (MDC), Indonesia</b><br><i>Elevation</i>: 264 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>124.925878,1.549447,264</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SUB</name>
+  <description>
+    <![CDATA[
+<b>Surabaya-Juanda (SUB), Indonesia</b><br><i>Elevation</i>: 9 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>112.786858,-7.379831,9</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KCH</name>
+  <description>
+    <![CDATA[
+<b>Kuching Intl (KCH), Malaysia</b><br><i>Elevation</i>: 89 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>110.346933,1.484697,89</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TPE</name>
+  <description>
+    <![CDATA[
+<b>Taipei-Taoyuan Intl (TPE), Taiwan</b><br><i>Elevation</i>: 106 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>121.232822,25.077731,106</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>MLE</name>
+  <description>
+    <![CDATA[
+<b>Male Intl (MLE), Maldives</b><br><i>Elevation</i>: 6 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>73.529128,4.191833,6</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ATH</name>
+  <description>
+    <![CDATA[
+<b>Athens-Eleftherios Venizelos Intl (ATH), Greece</b><br><i>Elevation</i>: 308 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>23.944467,37.936358,308</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>JED</name>
+  <description>
+    <![CDATA[
+<b>Jeddah-King Abdulaziz Intl (JED), Saudi Arabia</b><br><i>Elevation</i>: 48 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>39.156536,21.679564,48</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>YHZ</name>
+  <description>
+    <![CDATA[
+<b>Halifax Intl (YHZ), Canada</b><br><i>Elevation</i>: 477 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-63.50861,44.880833,477</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>BOM</name>
+  <description>
+    <![CDATA[
+<b>Bombay-Chhatrapati Shivaji Intl (BOM), India</b><br><i>Elevation</i>: 37 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>72.867919,19.088686,37</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>PNH</name>
+  <description>
+    <![CDATA[
+<b>Phnom Penh Intl (PNH), Cambodia</b><br><i>Elevation</i>: 40 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>104.844139,11.546556,40</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DAD</name>
+  <description>
+    <![CDATA[
+<b>Danang Intl (DAD), Vietnam</b><br><i>Elevation</i>: 33 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>108.19937,16.043917,33</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LAX</name>
+  <description>
+    <![CDATA[
+<b>Los Angeles Intl (LAX), United States</b><br><i>Elevation</i>: 126 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-118.408075,33.942536,126</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DUS</name>
+  <description>
+    <![CDATA[
+<b>Duesseldorf-Dusseldorf (DUS), Germany</b><br><i>Elevation</i>: 147 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>6.766775,51.289453,147</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LJU</name>
+  <description>
+    <![CDATA[
+<b>Ljubliana-Ljubljana (LJU), Slovenia</b><br><i>Elevation</i>: 1273 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>14.457611,46.223686,1273</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>OKA</name>
+  <description>
+    <![CDATA[
+<b>Naha (OKA), Japan</b><br><i>Elevation</i>: 12 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>127.645869,26.195814,12</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>OGN</name>
+  <description>
+    <![CDATA[
+<b>Yonaguni Jima-Yonaguni (OGN), Japan</b><br><i>Elevation</i>: 70 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>122.977778,24.466944,70</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>NGO</name>
+  <description>
+    <![CDATA[
+<b>Nagoya-Chubu Centrair Intl (NGO), Japan</b><br><i>Elevation</i>: 15 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>136.805408,34.858414,15</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>PUS</name>
+  <description>
+    <![CDATA[
+<b>Kimhae-Gimhae Intl (PUS), South Korea</b><br><i>Elevation</i>: 6 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>128.938222,35.179528,6</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>YVR</name>
+  <description>
+    <![CDATA[
+<b>Vancouver Intl (YVR), Canada</b><br><i>Elevation</i>: 14 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>-123.184444,49.193889,14</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LYR</name>
+  <description>
+    <![CDATA[
+<b>Svalbard-Longyear (LYR), Svalbard</b><br><i>Elevation</i>: 88 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>15.465556,78.246111,88</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TOS</name>
+  <description>
+    <![CDATA[
+<b>Tromso-Langnes (TOS), Norway</b><br><i>Elevation</i>: 31 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>18.918919,69.683333,31</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LLW</name>
+  <description>
+    <![CDATA[
+<b>Lilongwe-Kamuzu Intl (LLW), Malawi</b><br><i>Elevation</i>: 4035 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>33.781,-13.789378,4035</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SDJ</name>
+  <description>
+    <![CDATA[
+<b>Sendai (SDJ), Japan</b><br><i>Elevation</i>: 15 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>140.916944,38.139722,15</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LGK</name>
+  <description>
+    <![CDATA[
+<b>Pulau-Langkawi Intl (LGK), Malaysia</b><br><i>Elevation</i>: 29 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>99.728667,6.329728,29</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CNS</name>
+  <description>
+    <![CDATA[
+<b>Cairns Intl (CNS), Australia</b><br><i>Elevation</i>: 10 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>145.755278,-16.885833,10</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TOD</name>
+  <description>
+    <![CDATA[
+<b>Tioman-Pulau Tioman (TOD), Malaysia</b><br><i>Elevation</i>: 15 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>104.160019,2.818183,15</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LCA</name>
+  <description>
+    <![CDATA[
+<b>Larnaca (LCA), Cyprus</b><br><i>Elevation</i>: 8 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>33.62485,34.875117,8</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>IVL</name>
+  <description>
+    <![CDATA[
+<b>Ivalo (IVL), Finland</b><br><i>Elevation</i>: 481 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>27.405328,68.607269,481</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TXL</name>
+  <description>
+    <![CDATA[
+<b>Berlin-Tegel (TXL), Germany</b><br><i>Elevation</i>: 122 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>13.287711,52.559686,122</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ZRH</name>
+  <description>
+    <![CDATA[
+<b>Zurich (ZRH), Switzerland</b><br><i>Elevation</i>: 1416 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>8.549167,47.464722,1416</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SPN</name>
+  <description>
+    <![CDATA[
+<b>Saipan-Francisc. (SPN), Northern Mariana Islands</b><br><i>Elevation</i>: 215 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>145.729356,15.119003,215</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KIX</name>
+  <description>
+    <![CDATA[
+<b>Osaka-Kansai (KIX), Japan</b><br><i>Elevation</i>: 49 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>135.244167,34.4347222,49</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>UBP</name>
+  <description>
+    <![CDATA[
+<b>Ubon Ratchathani (UBP), Thailand</b><br><i>Elevation</i>: 406 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>104.870231,15.251278,406</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>PVG</name>
+  <description>
+    <![CDATA[
+<b>Shanghai-Pudong (PVG), China</b><br><i>Elevation</i>: 13 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>121.805214,31.143378,13</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>JOG</name>
+  <description>
+    <![CDATA[
+<b>Yogyakarta-Adi Sutjipto (JOG), Indonesia</b><br><i>Elevation</i>: 350 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>110.431758,-7.788181,350</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>SGN</name>
+  <description>
+    <![CDATA[
+<b>Ho Chi Minh City-Tansonnhat Intl (SGN), Vietnam</b><br><i>Elevation</i>: 33 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>106.651856,10.818797,33</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HKT</name>
+  <description>
+    <![CDATA[
+<b>Phuket Intl (HKT), Thailand</b><br><i>Elevation</i>: 82 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>98.316872,8.1132,82</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>USM</name>
+  <description>
+    <![CDATA[
+<b>Ko Samui-Samui (USM), Thailand</b><br><i>Elevation</i>: 64 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>100.062272,9.547794,64</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>UTH</name>
+  <description>
+    <![CDATA[
+<b>Udon Thani (UTH), Thailand</b><br><i>Elevation</i>: 579 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>102.788247,17.386436,579</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>IXZ</name>
+  <description>
+    <![CDATA[
+<b>Port Blair (IXZ), India</b><br><i>Elevation</i>: 14 ft<br><i>Flights</i>: 2
+]]>
+  </description>
+  <Point>
+    <coordinates>92.729744,11.641161,14</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HBE</name>
+  <description>
+    <![CDATA[
+<b>Alexandria-Borg El Arab Intl (HBE), Egypt</b><br><i>Elevation</i>: 177 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>29.696408,30.917669,177</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KMQ</name>
+  <description>
+    <![CDATA[
+<b>Kanazawa-Komatsu (KMQ), Japan</b><br><i>Elevation</i>: 36 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>136.406544,36.394611,36</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>NTQ</name>
+  <description>
+    <![CDATA[
+<b>Wajima-Noto (NTQ), Japan</b><br><i>Elevation</i>: 718 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>136.961853,37.293097,718</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>PHX</name>
+  <description>
+    <![CDATA[
+<b>Phoenix Sky Harbor Intl (PHX), United States</b><br><i>Elevation</i>: 1135 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>-112.011583,33.434278,1135</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>LAS</name>
+  <description>
+    <![CDATA[
+<b>Las Vegas-Mc Carran Intl (LAS), United States</b><br><i>Elevation</i>: 2141 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>-115.15225,36.080056,2141</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>KBR</name>
+  <description>
+    <![CDATA[
+<b>Kota Bahru-Sultan Ismail Petra (KBR), Malaysia</b><br><i>Elevation</i>: 16 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>102.293014,6.16685,16</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>JDH</name>
+  <description>
+    <![CDATA[
+<b>Jodhpur (JDH), India</b><br><i>Elevation</i>: 717 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>73.048869,26.251092,717</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>ATQ</name>
+  <description>
+    <![CDATA[
+<b>Amritsar (ATQ), India</b><br><i>Elevation</i>: 756 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>74.797264,31.709594,756</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>DMM</name>
+  <description>
+    <![CDATA[
+<b>Dammam-King Fahd Intl (DMM), Saudi Arabia</b><br><i>Elevation</i>: 72 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>49.79789,26.471161,72</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>RDN</name>
+  <description>
+    <![CDATA[
+<b>Redang (RDN), Malaysia</b><br><i>Elevation</i>: 10 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>103.007,5.76528,10</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TGG</name>
+  <description>
+    <![CDATA[
+<b>Kuala Terengganu-Sultan Mahmud (TGG), Malaysia</b><br><i>Elevation</i>: 21 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>103.10336,5.382639,21</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>GMP</name>
+  <description>
+    <![CDATA[
+<b>Seoul-Gimpo (GMP), South Korea</b><br><i>Elevation</i>: 58 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>126.790586,37.558311,58</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>PEN</name>
+  <description>
+    <![CDATA[
+<b>Penang Intl (PEN), Malaysia</b><br><i>Elevation</i>: 11 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>100.276864,5.297139,11</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>GZA</name>
+  <description>
+    <![CDATA[
+<b>Gaza-Yasser Arafat Intl (GZA), Palestine</b><br><i>Elevation</i>: 320 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>34.276111,31.246389,320</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>CTS</name>
+  <description>
+    <![CDATA[
+<b>Sapporo-New Chitose (CTS), Japan</b><br><i>Elevation</i>: 82 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>141.692283,42.7752,82</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TUN</name>
+  <description>
+    <![CDATA[
+<b>Tunis-Carthage (TUN), Tunisia</b><br><i>Elevation</i>: 22 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>10.227217,36.851033,22</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>MLA</name>
+  <description>
+    <![CDATA[
+<b>Malta-Luqa (MLA), Malta</b><br><i>Elevation</i>: 300 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>14.4775,35.857497,300</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>HHN</name>
+  <description>
+    <![CDATA[
+<b>Hahn-Frankfurt Hahn (HHN), Germany</b><br><i>Elevation</i>: 1649 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>7.263892,49.948672,1649</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+<Placemark>
+  <name>TMP</name>
+  <description>
+    <![CDATA[
+<b>Tampere Pirkkala (TMP), Finland</b><br><i>Elevation</i>: 390 ft<br><i>Flights</i>: 1
+]]>
+  </description>
+  <Point>
+    <coordinates>23.604392,61.414147,390</coordinates>
+  </Point>
+  <styleUrl>#blue-pushpin</styleUrl>
+</Placemark>
+  </Document>
+</kml>
